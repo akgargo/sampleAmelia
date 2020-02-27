@@ -1,0 +1,102 @@
+[
+  {
+    "text": "I want the policy to start on June 15th, 2018 and to end on June 15th, 2019",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "checkInDate",
+        "slotValue": "June 15th, 2018",
+        "startIndex": 30,
+        "endIndex": 45
+      },
+      {
+        "slotName": "checkOutDate",
+        "slotValue": "June 15th, 2019",
+        "startIndex": 60,
+        "endIndex": 75
+      }
+    ]
+  },
+  {
+    "text": "Start on 7/1/2018 and end on 7/1/2019",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "checkInDate",
+        "slotValue": "7/1/2018",
+        "startIndex": 8,
+        "endIndex": 17
+      },
+      {
+        "slotName": "checkOutDate",
+        "slotValue": "7/1/2019",
+        "startIndex": 29,
+        "endIndex": 37
+      }
+    ]
+  },
+  {
+    "text": "Begin 10/1/2018 end 10/1/2019",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "checkInDate",
+        "slotValue": "10/1/2018",
+        "startIndex": 6,
+        "endIndex": 15
+      },
+      {
+        "slotName": "checkOutDate",
+        "slotValue": "10/1/2019",
+        "startIndex": 20,
+        "endIndex": 29
+      }
+    ]
+  },
+  {
+    "text": "Coverage to begin on 5/11/2018 and end on 5/12/2019",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "checkInDate",
+        "slotValue": "5/11/2018",
+        "startIndex": 21,
+        "endIndex": 30
+      },
+      {
+        "slotName": "checkOutDate",
+        "slotValue": "5/12/2019",
+        "startIndex": 42,
+        "endIndex": 51
+      }
+    ]
+  },
+  {
+    "text": "2/21/2018-2/21/2019",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "checkInDate",
+        "slotValue": "2/21/2018",
+        "startIndex": 0,
+        "endIndex": 9
+      },
+      {
+        "slotName": "checkOutDate",
+        "slotValue": "2/21/2019",
+        "startIndex": 10,
+        "endIndex": 19
+      }
+    ]
+  }
+]

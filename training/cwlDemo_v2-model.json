@@ -1,0 +1,37 @@
+[
+  {
+    "text": "cwlDemo I need to access BDDemo",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlDemo I want to start demo",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlDemo I need a ui demo",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlDemo I want to demo today",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlDemo I'm happy",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  }
+]

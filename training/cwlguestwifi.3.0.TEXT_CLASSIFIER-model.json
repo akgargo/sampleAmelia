@@ -1,0 +1,11 @@
+[
+  {
+    "text": "request wifi",
+    "intents": [
+      "cwlguestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  }
+]

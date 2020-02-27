@@ -1,0 +1,322 @@
+{
+  "id": "657f4831-f5af-4ba1-9ac8-53c5fe45d5a1",
+  "name": "cwlColorModel",
+  "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+  "revisions": [
+    {
+      "id": "a9d78efb-e0d5-412c-a2b3-5c7822e6bfaf",
+      "name": "cwlColorModel",
+      "algorithm": "Passive Aggressive Tagger",
+      "status": "EDITING",
+      "revisionNumber": {
+        "major": 0,
+        "minor": 2
+      },
+      "trainingSummary": "",
+      "evaluations": []
+    },
+    {
+      "id": "90ec3989-ad61-4d02-b4b4-ea3d28fd957e",
+      "name": "cwlColorModel",
+      "algorithm": "Passive Aggressive Tagger",
+      "status": "READY",
+      "revisionNumber": {
+        "major": 1,
+        "minor": 0
+      },
+      "trainingSummary": "Training classifier: cwlColorModel, revision: 1.0 \nProcessing training examples for entity tagger model 'cwlColorModel'...\nProcessed training corpora for 'cwlColorModel' in 42.12 ms\nBeginning 5-Fold Cross-Validation for 'cwlColorModel'\nTraining Fold 1/5...\nEvaluating Fold 1/5...\n'cwlColorModel' Cross-Validation Fold 1/5:\n             Correct   System     Gold     Precision        Recall     F-Measure\n--------------------------------------------------------------------------------\ncwlFavColor        0        0        1             0             0             0\n--------------------------------------------------------------------------------\n    Overall        0        0        1             0             0             0\n\nTraining Fold 2/5...\nEvaluating Fold 2/5...\n'cwlColorModel' Cross-Validation Fold 2/5:\n         Correct   System     Gold     Precision        Recall     F-Measure\n----------------------------------------------------------------------------\n----------------------------------------------------------------------------\nOverall        0        0        0             0             0             0\n\nTraining Fold 3/5...\nEvaluating Fold 3/5...\n'cwlColorModel' Cross-Validation Fold 3/5:\n         Correct   System     Gold     Precision        Recall     F-Measure\n----------------------------------------------------------------------------\n----------------------------------------------------------------------------\nOverall        0        0        0             0             0             0\n\nTraining Fold 4/5...\nEvaluating Fold 4/5...\n'cwlColorModel' Cross-Validation Fold 4/5:\n         Correct   System     Gold     Precision        Recall     F-Measure\n----------------------------------------------------------------------------\n----------------------------------------------------------------------------\nOverall        0        0        0             0             0             0\n\nTraining Fold 5/5...\nEvaluating Fold 5/5...\n'cwlColorModel' Cross-Validation Fold 5/5:\n             Correct   System     Gold     Precision        Recall     F-Measure\n--------------------------------------------------------------------------------\ncwlFavColor        0        0        4             0             0             0\n--------------------------------------------------------------------------------\n    Overall        0        0        4             0             0             0\n\n'cwlColorModel' Cross-Validation Overall:\n             Correct   System     Gold     Precision        Recall     F-Measure\n--------------------------------------------------------------------------------\ncwlFavColor        0        0        5             0             0             0\n--------------------------------------------------------------------------------\n    Overall        0        0        5             0             0             0\n\nBeginning training with 8 training examples and 8 validation examples\nBeginning training (52 train instances, 0 validation instances)\nEpoch 0: 5 / 52 incorrect.\n30 epochs remaining.\nEpoch 27: 4 / 52 incorrect.\n30 epochs remaining.\nEpoch 28: 3 / 52 incorrect.\n30 epochs remaining.\nEpoch 31: 1 / 52 incorrect.\n30 epochs remaining.\nEpoch 42: 0 / 52 incorrect.\n30 epochs remaining.\nEarly stopping on epoch 72 after no improvement for 30 epochs\nTraining completed successfully\n\nEvaluating cwlColorModel on 8 validation instances...\ncwlColorModel validation eval complete:\n             Correct   System     Gold     Precision        Recall     F-Measure\n--------------------------------------------------------------------------------\ncwlFavColor        4        4        5             1           0.8         0.889\n--------------------------------------------------------------------------------\n    Overall        4        4        5             1           0.8         0.889\n\nFinished training classifier: cwlColorModel, revision: 1.0\n",
+      "corpusMetaData": {
+        "noOfUtterances": 10,
+        "noOfGoals": 0,
+        "noOfSlots": 1,
+        "goals": [],
+        "slots": [
+          "cwlFavColor"
+        ]
+      },
+      "evaluations": [
+        {
+          "id": "1ddf20f3-3e78-40e5-bd43-75ed0b887fda",
+          "name": "cwlColorModel_validation",
+          "stats": {
+            "summary": {
+              "label": "Overall",
+              "correct": 4,
+              "gold": 5,
+              "system": 4,
+              "precision": 1.0,
+              "recall": 0.8,
+              "f1": 0.888888888888889
+            },
+            "rows": [
+              {
+                "label": "cwlFavColor",
+                "correct": 4,
+                "gold": 5,
+                "system": 4,
+                "precision": 1.0,
+                "recall": 0.8,
+                "f1": 0.888888888888889
+              }
+            ]
+          },
+          "confusions": {
+            "rows": [
+              {
+                "header": "cwlFavColor",
+                "values": [
+                  4
+                ]
+              }
+            ],
+            "columns": [
+              "cwlFavColor"
+            ]
+          },
+          "misclassifications": {
+            "predictions": [
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "Betcha my fav color is wheat",
+                "text": "wheat"
+              }
+            ]
+          }
+        },
+        {
+          "id": "48a265ca-5131-4415-8b86-ed48034ee689",
+          "name": "cwlColorModel_5-fold_cv",
+          "stats": {
+            "summary": {
+              "label": "Overall",
+              "correct": 0,
+              "gold": 5,
+              "system": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "rows": [
+              {
+                "label": "cwlFavColor",
+                "correct": 0,
+                "gold": 5,
+                "system": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            ]
+          },
+          "confusions": {
+            "rows": [],
+            "columns": []
+          },
+          "misclassifications": {
+            "predictions": [
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "Air superiority blue",
+                "text": "blue"
+              },
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "cool grey",
+                "text": "grey"
+              },
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "An amazing color is often seen in cobalt blue .",
+                "text": "blue"
+              },
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "Betcha my fav color is wheat",
+                "text": "wheat"
+              },
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "Caribbean Green",
+                "text": "Green"
+              }
+            ]
+          }
+        },
+        {
+          "id": "7e9ad024-a864-4525-8cc7-960fcce0eef1",
+          "name": "cwlColorModel_5-fold_cv_4",
+          "stats": {
+            "summary": {
+              "label": "Overall",
+              "correct": 0,
+              "gold": 4,
+              "system": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "rows": [
+              {
+                "label": "cwlFavColor",
+                "correct": 0,
+                "gold": 4,
+                "system": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            ]
+          },
+          "confusions": {
+            "rows": [],
+            "columns": []
+          },
+          "misclassifications": {
+            "predictions": [
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "cool grey",
+                "text": "grey"
+              },
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "An amazing color is often seen in cobalt blue .",
+                "text": "blue"
+              },
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "Betcha my fav color is wheat",
+                "text": "wheat"
+              },
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "Caribbean Green",
+                "text": "Green"
+              }
+            ]
+          }
+        },
+        {
+          "id": "306b25b4-c319-459a-9e2d-728116b1dcf3",
+          "name": "cwlColorModel_5-fold_cv_3",
+          "stats": {
+            "summary": {
+              "label": "Overall",
+              "correct": 0,
+              "gold": 0,
+              "system": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "rows": []
+          },
+          "confusions": {
+            "rows": [],
+            "columns": []
+          },
+          "misclassifications": {
+            "predictions": []
+          }
+        },
+        {
+          "id": "084b8cd6-1710-4c69-b5c1-6898189bfc05",
+          "name": "cwlColorModel_5-fold_cv_2",
+          "stats": {
+            "summary": {
+              "label": "Overall",
+              "correct": 0,
+              "gold": 0,
+              "system": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "rows": []
+          },
+          "confusions": {
+            "rows": [],
+            "columns": []
+          },
+          "misclassifications": {
+            "predictions": []
+          }
+        },
+        {
+          "id": "7b868799-d058-414c-9eaf-eb66fcab7d12",
+          "name": "cwlColorModel_5-fold_cv_1",
+          "stats": {
+            "summary": {
+              "label": "Overall",
+              "correct": 0,
+              "gold": 0,
+              "system": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "rows": []
+          },
+          "confusions": {
+            "rows": [],
+            "columns": []
+          },
+          "misclassifications": {
+            "predictions": []
+          }
+        },
+        {
+          "id": "f9859c00-320c-4901-beec-31c615991b20",
+          "name": "cwlColorModel_5-fold_cv_0",
+          "stats": {
+            "summary": {
+              "label": "Overall",
+              "correct": 0,
+              "gold": 1,
+              "system": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "rows": [
+              {
+                "label": "cwlFavColor",
+                "correct": 0,
+                "gold": 1,
+                "system": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            ]
+          },
+          "confusions": {
+            "rows": [],
+            "columns": []
+          },
+          "misclassifications": {
+            "predictions": [
+              {
+                "actual": "cwlFavColor",
+                "predicted": "",
+                "context": "Air superiority blue",
+                "text": "blue"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "classifierType": "TEXT_TAGGER"
+}

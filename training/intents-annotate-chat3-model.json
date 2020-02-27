@@ -1,0 +1,29 @@
+[
+  {
+    "text": "User: What do I need to do to transfer abroad",
+    "intents": [
+      "transfer_money_abroad"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "User: Can you show me how to send money to another country",
+    "intents": [
+      "transfer_money_abroad"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "User: I need help to transfer money to Germany",
+    "intents": [
+      "transfer_money_abroad"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  }
+]

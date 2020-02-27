@@ -1,0 +1,106 @@
+{
+  "id": "6675e853-93e5-4038-a0af-69a96d6ec770",
+  "document": {
+    "id": "2c5071c4-8975-4d86-ab89-e37397eacb9e",
+    "name": "cwlguestWifi_2",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "cwlguestWifi_2",
+  "annotations": [
+    {
+      "text": "cwlGuestWifi A visitor coming to our company and needs to get online.",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Absolutely must get wifi access for some guests",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Because of a meeting, have to obtain internet connection for client visiting.",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Bringing someone to our organization who needs internet at our company.",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Can I have internet access for a guest to our company?",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Checking on getting connection to wifi for a company guest.",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Connection to internet for customer appointment",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Date for client conversation next week and need connection for him",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi During upcoming appointment, client wifi desirous",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlGuestWifi Email check needed so guest needs internet access",
+      "intents": [
+        "cwlGuestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

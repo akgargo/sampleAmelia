@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:prop="http://www.ipsoft.com/schema/bpmn/prop" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" name="doYahoo" isExecutable="false">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>SequenceFlow_0vw2bwp</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_0vw2bwp" sourceRef="StartEvent_1" targetRef="Task_1cknll0"/>
+    <bpmn2:userTask id="Task_1cknll0" name="run the integration flow yahoo_weather">
+      <bpmn2:incoming>SequenceFlow_0vw2bwp</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1wutazg</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_1wutazg" sourceRef="Task_1cknll0" targetRef="Task_0we93qj"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_0ellx0n" sourceRef="Task_0we93qj" targetRef="Task_0fp0oi3"/>
+    <bpmn2:scriptTask id="Task_0fp0oi3" name="parse response" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_0ellx0n</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_06q3eox</bpmn2:outgoing>
+      <bpmn2:script>import groovy.json.JsonSlurper;
+ 
+def temp = "no temp"
+def bodyAsString = execution.getVariable("body")
+if (bodyAsString != null) {
+    def parser = new JsonSlurper()
+         def output = parser.parseText(bodyAsString)
+         temp = output.query.results.channel.item.condition.temp
+}
+execution.setVariable("temp", temp)
+execution.setVariable("output", output)</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_06q3eox" sourceRef="Task_0fp0oi3" targetRef="Task_133qnom"/>
+    <bpmn2:userTask id="Task_133qnom" name="say temperature is ${temp} degrees in Nome, Alaska.">
+      <bpmn2:incoming>SequenceFlow_06q3eox</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1397yq4</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:endEvent id="EndEvent_0kqn3ur">
+      <bpmn2:incoming>SequenceFlow_1397yq4</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1397yq4" sourceRef="Task_133qnom" targetRef="EndEvent_0kqn3ur"/>
+    <bpmn2:userTask id="Task_0we93qj" name="run the integration flow yahoo_weather">
+      <bpmn2:incoming>SequenceFlow_1wutazg</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0ellx0n</bpmn2:outgoing>
+    </bpmn2:userTask>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="180" y="170" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0vw2bwp_di" bpmnElement="SequenceFlow_0vw2bwp">
+        <di:waypoint x="216" y="188"/>
+        <di:waypoint x="258" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1n5uze8_di" bpmnElement="Task_1cknll0">
+        <dc:Bounds x="258" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1wutazg_di" bpmnElement="SequenceFlow_1wutazg">
+        <di:waypoint x="378" y="188"/>
+        <di:waypoint x="427" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0ellx0n_di" bpmnElement="SequenceFlow_0ellx0n">
+        <di:waypoint x="547" y="188"/>
+        <di:waypoint x="589" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_0ojdl5j_di" bpmnElement="Task_0fp0oi3">
+        <dc:Bounds x="589" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_06q3eox_di" bpmnElement="SequenceFlow_06q3eox">
+        <di:waypoint x="709" y="188"/>
+        <di:waypoint x="741" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1z07gse_di" bpmnElement="Task_133qnom">
+        <dc:Bounds x="741" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_0kqn3ur_di" bpmnElement="EndEvent_0kqn3ur">
+        <dc:Bounds x="898" y="170" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1397yq4_di" bpmnElement="SequenceFlow_1397yq4">
+        <di:waypoint x="861" y="188"/>
+        <di:waypoint x="898" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_0ej5uaj_di" bpmnElement="Task_0we93qj">
+        <dc:Bounds x="427" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

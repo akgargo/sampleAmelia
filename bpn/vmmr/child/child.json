@@ -1,0 +1,20 @@
+{
+  "id": "d4bc4b3a-0247-4a1e-b9e4-677282652418",
+  "bpnModelId": "b5113add-ac03-4122-b821-32472a6cb035",
+  "createdBy": "Victor Monsalve",
+  "modifiedBy": "Victor Monsalve",
+  "created": {
+    "seconds": 1575482972,
+    "nanos": 516000000
+  },
+  "modified": {
+    "seconds": 1575482972,
+    "nanos": 516000000
+  },
+  "modelRevisionStatus": "DEPLOYED",
+  "creatorType": "HUMAN",
+  "bpnModelRevisionNumber": "2.0",
+  "allowedActions": 5,
+  "mergeable": false,
+  "revisionXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><bpmn2:definitions xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:bpmn2=\"http://www.omg.org/spec/BPMN/20100524/MODEL\" xmlns:bpmndi=\"http://www.omg.org/spec/BPMN/20100524/DI\" xmlns:dc=\"http://www.omg.org/spec/DD/20100524/DC\" xmlns:di=\"http://www.omg.org/spec/DD/20100524/DI\" id=\"sample-diagram\" targetNamespace=\"http://bpmn.io/schema/bpmn\" xsi:schemaLocation=\"http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd\">\n  <bpmn2:process id=\"Process_1\" name=\"child\" isExecutable=\"false\">\n    <bpmn2:startEvent id=\"StartEvent_1\">\n      <bpmn2:outgoing>SequenceFlow_00ltwrd</bpmn2:outgoing>\n    </bpmn2:startEvent>\n    <bpmn2:userTask id=\"Task_0hkj7ph\" name=\"say &quot;hello world&quot;\">\n      <bpmn2:incoming>SequenceFlow_00ltwrd</bpmn2:incoming>\n      <bpmn2:outgoing>SequenceFlow_0nzuh7n</bpmn2:outgoing>\n    </bpmn2:userTask>\n    <bpmn2:sequenceFlow id=\"SequenceFlow_00ltwrd\" sourceRef=\"StartEvent_1\" targetRef=\"Task_0hkj7ph\"/>\n    <bpmn2:endEvent id=\"EndEvent_1neln87\">\n      <bpmn2:incoming>SequenceFlow_0nzuh7n</bpmn2:incoming>\n    </bpmn2:endEvent>\n    <bpmn2:sequenceFlow id=\"SequenceFlow_0nzuh7n\" sourceRef=\"Task_0hkj7ph\" targetRef=\"EndEvent_1neln87\"/>\n  </bpmn2:process>\n  <bpmndi:BPMNDiagram id=\"BPMNDiagram_1\">\n    <bpmndi:BPMNPlane id=\"BPMNPlane_1\" bpmnElement=\"Process_1\">\n      <bpmndi:BPMNShape id=\"_BPMNShape_StartEvent_2\" bpmnElement=\"StartEvent_1\">\n        <dc:Bounds x=\"180\" y=\"170\" width=\"36\" height=\"36\"/>\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"UserTask_0epjzmt_di\" bpmnElement=\"Task_0hkj7ph\">\n        <dc:Bounds x=\"305\" y=\"158\" width=\"120\" height=\"80\"/>\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_00ltwrd_di\" bpmnElement=\"SequenceFlow_00ltwrd\">\n        <di:waypoint x=\"216\" y=\"188\"/>\n        <di:waypoint x=\"261\" y=\"188\"/>\n        <di:waypoint x=\"261\" y=\"198\"/>\n        <di:waypoint x=\"305\" y=\"198\"/>\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"EndEvent_1neln87_di\" bpmnElement=\"EndEvent_1neln87\">\n        <dc:Bounds x=\"550\" y=\"180\" width=\"36\" height=\"36\"/>\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNEdge id=\"SequenceFlow_0nzuh7n_di\" bpmnElement=\"SequenceFlow_0nzuh7n\">\n        <di:waypoint x=\"425\" y=\"198\"/>\n        <di:waypoint x=\"550\" y=\"198\"/>\n      </bpmndi:BPMNEdge>\n    </bpmndi:BPMNPlane>\n  </bpmndi:BPMNDiagram>\n</bpmn2:definitions>"
+}

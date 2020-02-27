@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camel="http://camel.apache.org/schema/spring" xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+ http://camel.apache.org/schema/spring
+ http://camel.apache.org/schema/spring/camel-spring.xsd
+">
+    <!-- add a comment -->
+    <camel:camelContext id="mainContext">
+        <camel:route id="route1">
+            <camel:description layoutX="40" layoutY="200" layoutWidth="560" layoutHeight="340"/>
+            <camel:from id="mainRouteStart" uri="direct:start">
+                <camel:description layoutX="50" layoutY="250" layoutWidth="120" layoutHeight="120"/>
+            </camel:from>
+            <!-- you can also use other languages such as groovy, ognl, mvel, javascript etc. -->
+            <camel:to id="c4e63689-785e-4541-a927-0e0cc98241c6" uri="https4://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&amp;format=json&amp;diagnostics=true&amp;env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&amp;callback=">
+                <camel:description layoutX="200" layoutY="250" layoutWidth="120" layoutHeight="120"/>
+            </camel:to>
+            <camel:convertBodyTo type="java.lang.String" id="d97f9150-aab8-11e7-a0a5-1d4f80ae85b9">
+                <camel:description layoutX="345" layoutY="250" layoutWidth="120" layoutHeight="120"/>
+            </camel:convertBodyTo>
+            <camel:to uri="bean:varpop?method=moveToOutboundVariables(&apos;_body_&apos;)" id="dde7ef60-a795-11e7-9c6e-b5575ac44e3c">
+                <camel:description layoutX="480" layoutY="250" layoutWidth="120" layoutHeight="120"/>
+            </camel:to>
+        </camel:route>
+    </camel:camelContext>
+</beans>

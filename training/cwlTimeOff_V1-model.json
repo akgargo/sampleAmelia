@@ -1,0 +1,44 @@
+[
+  {
+    "text": "cwlTimeOff I need to apply leave",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlTimeOff I want to apply holidays",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlTimeOff I want to rest",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlTimeOff I'm tired",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlTimeOff I have holiday plan",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "cwlTimeOff I need holiday",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  }
+]

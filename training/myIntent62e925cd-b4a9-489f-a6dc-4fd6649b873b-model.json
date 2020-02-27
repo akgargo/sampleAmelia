@@ -1,0 +1,20 @@
+[
+  {
+    "text": "Can I have internet access for a guest to our company ?",
+    "intents": [
+      "guestwifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Checking on getting connection to wifi for a company guest.",
+    "intents": [
+      "guestwifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  }
+]

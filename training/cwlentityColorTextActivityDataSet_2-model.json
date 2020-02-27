@@ -1,0 +1,121 @@
+[
+  {
+    "text": "Air superiority blue",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "cwlFavColor",
+        "slotValue": "blue",
+        "startIndex": 16,
+        "endIndex": 20
+      }
+    ]
+  },
+  {
+    "text": "American brown the shade that brings me the most joy",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "cwlFavColor",
+        "slotValue": "brown",
+        "startIndex": 9,
+        "endIndex": 15
+      }
+    ]
+  },
+  {
+    "text": "An amazing color is often seen in cobalt blue.",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "cwlFavColor",
+        "slotValue": "blue",
+        "startIndex": 41,
+        "endIndex": 45
+      }
+    ]
+  },
+  {
+    "text": "Betcha my fav color is wheat",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "cwlFavColor",
+        "slotValue": "wheat",
+        "startIndex": 23,
+        "endIndex": 28
+      }
+    ]
+  },
+  {
+    "text": "boston university red my choice",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "cwlFavColor",
+        "slotValue": "red",
+        "startIndex": 18,
+        "endIndex": 22
+      }
+    ]
+  },
+  {
+    "text": "By far I would have to say bitter lemon",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Can I choose the best of all hues which would be taupe",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Caribbean Green",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "cwlFavColor",
+        "slotValue": "Green",
+        "startIndex": 10,
+        "endIndex": 15
+      }
+    ]
+  },
+  {
+    "text": "cool grey",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": [
+      {
+        "slotName": "cwlFavColor",
+        "slotValue": "grey",
+        "startIndex": 5,
+        "endIndex": 9
+      }
+    ]
+  },
+  {
+    "text": "deciding is hard but I would select beige",
+    "intents": [],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  }
+]

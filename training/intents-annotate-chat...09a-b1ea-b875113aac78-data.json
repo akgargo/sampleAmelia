@@ -1,0 +1,181 @@
+{
+  "id": "aae89c4e-79f2-484c-aed9-b005b0ab6c40",
+  "document": {
+    "id": "203098d2-48cc-4a8f-b4b4-522df27b0d1d",
+    "name": "intents-annotate-chat...09a-b1ea-b875113aac78",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "intents-annotate-chat...09a-b1ea-b875113aac78",
+  "annotations": [
+    {
+      "text": "User: What methods can I use to facilitate a transfer from Belgium to China",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: I need to transfer money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: How can I transfer funds to France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: where can I learn to send money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Help me to send money to Poland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Can you help me figure out how to pay a certain bill from France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: How do I send money to the UK",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: How can I transfer money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: I want to transfer funds to Ireland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Tell me steps to transfer money to Africa",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: How can I transfer money between the Netherlands and ${continent}",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: What do I need to do to transfer abroad",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Can you show me how to send money to another country",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: I need help to transfer money to Germany",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: How can I send money to ${country}",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: I need help to transfer money to France",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: I need to do a money transfer to Africa",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Can money be sent outside Europe",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Can you assist me in transferring money to a person outside of Europe",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Can I transfer money to America",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Please tell me a way to send money to the UK",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "ANNOTATION_COMPLETED",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

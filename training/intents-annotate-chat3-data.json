@@ -1,0 +1,43 @@
+{
+  "id": "04492093-cfcf-439a-8e77-fdc14c971219",
+  "document": {
+    "id": "2e033705-171b-4ecd-a914-24e0aaad6b44",
+    "name": "intents-annotate-chat3",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "intents-annotate-chat3",
+  "annotations": [
+    {
+      "text": "User: What do I need to do to transfer abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Can you show me how to send money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: I need help to transfer money to Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 5,
+    "minor": 0
+  }
+}

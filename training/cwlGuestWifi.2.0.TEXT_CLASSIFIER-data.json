@@ -1,0 +1,25 @@
+{
+  "id": "6a352fc6-ecb3-4ec4-bc3b-1ddd7846b816",
+  "document": {
+    "id": "13053821-1021-41d4-ac4d-c480c81909fe",
+    "name": "cwlguestwifi.2.0.TEXT_CLASSIFIER",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "cwlguestwifi.2.0.TEXT_CLASSIFIER",
+  "annotations": [
+    {
+      "text": "request wifi",
+      "intents": [
+        "cwlguestWifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

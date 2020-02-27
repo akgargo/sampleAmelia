@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:prop="http://www.ipsoft.com/schema/bpmn/prop" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" name="doScript" isExecutable="false">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>SequenceFlow_1s13mp2</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:userTask id="Task_0av88n0" name=" say let's get started">
+      <bpmn2:incoming>SequenceFlow_1s13mp2</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0lcki5w</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:scriptTask id="Task_1x0by6m" name="get user first and last name" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_0lcki5w</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_137pkwc</bpmn2:outgoing>
+      <bpmn2:script>try {
+
+log.info("Starts !!")
+def user = userService.getUser();
+def myFirstname = user.firstName();
+def myLastname = user.lastName();
+log.info("myFirstname  :"+myFirstname);
+execution.setVariable("firstName", myFirstname);
+execution.setVariable("lastName", myLastname);
+int luckyno = Math.random()*100;
+execution.setVariable("luckyno",luckyno);
+
+} catch (Exception e){
+    log.info("Error fooing", e)
+}</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:userTask id="Task_094i5pb" name=" say ${firstName}">
+      <bpmn2:incoming>SequenceFlow_137pkwc</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0wn5pmk</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Task_1maxy7m" name="  say ${lastName}, today lucky no is ${luckyno}">
+      <bpmn2:incoming>SequenceFlow_0wn5pmk</bpmn2:incoming>
+      <bpmn2:incoming>SequenceFlow_0mu93xy</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0pmvvkx</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_1s13mp2" sourceRef="StartEvent_1" targetRef="Task_0av88n0"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_0lcki5w" sourceRef="Task_0av88n0" targetRef="Task_1x0by6m"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_137pkwc" sourceRef="Task_1x0by6m" targetRef="Task_094i5pb"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_0wn5pmk" sourceRef="Task_094i5pb" targetRef="Task_1maxy7m"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_0pmvvkx" sourceRef="Task_1maxy7m" targetRef="Task_16o0ee3"/>
+    <bpmn2:userTask id="Task_16o0ee3" name="Ask do you want to continue ?">
+      <bpmn2:incoming>SequenceFlow_0pmvvkx</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0592oh4</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:endEvent id="EndEvent_0lhdx6s">
+      <bpmn2:incoming>SequenceFlow_026ugda</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_026ugda" name="" sourceRef="ExclusiveGateway_08xaxu4" targetRef="EndEvent_0lhdx6s">
+      <bpmn2:extensionElements>
+        <prop:property name="expression" value=""/>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="SequenceFlow_0mu93xy" name="${result eq true} " sourceRef="ExclusiveGateway_08xaxu4" targetRef="Task_1maxy7m">
+      <bpmn2:extensionElements>
+        <prop:property name="expression" value="${result eq true} "/>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:scriptTask id="Task_1el3p4z" name="process response" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_0592oh4</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_10j7q3r</bpmn2:outgoing>
+      <bpmn2:script>log.info("Started")
+
+def response = execution.getVariable("response")
+
+boolean result
+
+if (response.equals("yes")) 
+{ 
+    result = true;
+}
+
+execution.setVariable("result", result)</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_0592oh4" sourceRef="Task_16o0ee3" targetRef="Task_1el3p4z"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_10j7q3r" sourceRef="Task_1el3p4z" targetRef="ExclusiveGateway_08xaxu4"/>
+    <bpmn2:inclusiveGateway id="ExclusiveGateway_08xaxu4" default="SequenceFlow_026ugda">
+      <bpmn2:incoming>SequenceFlow_10j7q3r</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_026ugda</bpmn2:outgoing>
+      <bpmn2:outgoing>SequenceFlow_0mu93xy</bpmn2:outgoing>
+    </bpmn2:inclusiveGateway>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="178" y="180" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_18r1mqf_di" bpmnElement="Task_0av88n0">
+        <dc:Bounds x="256" y="158" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ScriptTask_0jc631t_di" bpmnElement="Task_1x0by6m">
+        <dc:Bounds x="415" y="158" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_15xjimq_di" bpmnElement="Task_094i5pb">
+        <dc:Bounds x="579" y="158" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_1t54axu_di" bpmnElement="Task_1maxy7m">
+        <dc:Bounds x="726" y="158" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1s13mp2_di" bpmnElement="SequenceFlow_1s13mp2">
+        <di:waypoint x="214" y="198"/>
+        <di:waypoint x="256" y="198"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0lcki5w_di" bpmnElement="SequenceFlow_0lcki5w">
+        <di:waypoint x="376" y="198"/>
+        <di:waypoint x="415" y="198"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_137pkwc_di" bpmnElement="SequenceFlow_137pkwc">
+        <di:waypoint x="535" y="198"/>
+        <di:waypoint x="579" y="198"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0wn5pmk_di" bpmnElement="SequenceFlow_0wn5pmk">
+        <di:waypoint x="699" y="198"/>
+        <di:waypoint x="726" y="198"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0pmvvkx_di" bpmnElement="SequenceFlow_0pmvvkx">
+        <di:waypoint x="786" y="238"/>
+        <di:waypoint x="786" y="283"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1iv7jl3_di" bpmnElement="Task_16o0ee3">
+        <dc:Bounds x="726" y="283" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_0lhdx6s_di" bpmnElement="EndEvent_0lhdx6s">
+        <dc:Bounds x="957" y="293" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_026ugda_di" bpmnElement="SequenceFlow_026ugda">
+        <di:waypoint x="932" y="311"/>
+        <di:waypoint x="957" y="311"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="934" y="293" width="23" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0mu93xy_di" bpmnElement="SequenceFlow_0mu93xy">
+        <di:waypoint x="907" y="286"/>
+        <di:waypoint x="907" y="198"/>
+        <di:waypoint x="846" y="198"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="894" y="225" width="78" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_0s94joj_di" bpmnElement="Task_1el3p4z">
+        <dc:Bounds x="726" y="409" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0592oh4_di" bpmnElement="SequenceFlow_0592oh4">
+        <di:waypoint x="786" y="363"/>
+        <di:waypoint x="786" y="409"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_10j7q3r_di" bpmnElement="SequenceFlow_10j7q3r">
+        <di:waypoint x="846" y="449"/>
+        <di:waypoint x="907" y="449"/>
+        <di:waypoint x="907" y="336"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="InclusiveGateway_1vuh3jx_di" bpmnElement="ExclusiveGateway_08xaxu4">
+        <dc:Bounds x="882" y="286" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

@@ -1,0 +1,1636 @@
+{
+  "id": "8087d3ba-18e1-4c72-aa1d-56c38846ae07",
+  "document": {
+    "id": "e773e74a-5d25-46fa-93a2-a2233accd427",
+    "name": "transfer_money.2.0.TEXT_CLASSIFIER",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "transfer_money.2.0.TEXT_CLASSIFIER",
+  "annotations": [
+    {
+      "text": "Can I transfer from the Netherlands to Ireland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I pay my mom's bill in France from here",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I do to transfer money to Asia from the Netherlands",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I go about sending money to Spain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I need to do to transfer money to Canada",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please help transfer money between belgium and china",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "can you help me to transfer money to a friend in poland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please assist me in sending money to France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "My transfer is not going through",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What's the way to wiretransfer to a friend abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I need to do when transferring money from Norway to Pakistan",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I'd like to send money to a friend in Canada but don't know how to do that",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer money to Europe to Africa",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I transfer money online to Africa",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Where can I transfer money outside the country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you advise me how I make a money transfer from Denmark to Spain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to send funds overseas to a friend What do I do",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I want to transfer money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I do to send money to another nation",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I transfer money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need help wiring money from the Netherlands to Spain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money to Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I send money from ${country} to ${country}",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "transfer money",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I need to do to transfer abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I'm in the Netherlands and I need to transfer money to Canada How do I do that",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "how can i transfer money to france",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I send money to Japan",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Is there a way to send money to someone in France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Id like to transfer some coin to a place in Ireland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "May I get assistance with wiring money to someone in Spain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please assist me in sending money to Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money to ${country}",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I am in the Netherlands and want to send money to Spain Can you help me",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to send money to my country, how can I",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "how to i get money from italy to here, holland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do you send and receive money from other countries",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I transfer money to France from current location",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need help sending money to Asia from the Netherlands",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to figure out how to pay a bill from France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need help transferring money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need some assistance making a money transfer to france",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Are international transfers available",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I want to transfer money to Canada, how would I do that",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money to someone in a different country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I make a transfer to Russia",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What is wrong with my transfer",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Will a money transfer go through to my home country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I pay a bill from France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "how do i send money to someone in a different country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please show me how to make a transfer to Russia",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I sent money to someone who lives in another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Are there some funky rules for transferring money to the UK",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I uncertain of what to do but I need to send money to France Can you help me",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I go about sending money from Sweden to Portugal",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to send money to someone in Spain Can you help",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I wish I could find out how to send money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money between the Netherlands and ${continent}",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money internationally",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What if I want to send money out of the country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What are the steps and fees if I want to move my money to Indonesia from Denmark",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How to I send money over seas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I'd like to find out how to transfer money between Belgium and China",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What's the process for sending money to britain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I receive money in Italy from Holland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you explain me how to make an international transfer",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer to my family outside the country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Is there a fee to send money from here to Ireland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Is it easy to transfer money overseas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer fund to Ireland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you help me to send money to a person in Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do i go about transferring money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How should i go about wiring money between Asia and the Netherlands",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "i need to send some funds to somebody abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I want to send money to a friend outside of Europe but don't know how to do it",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I got an invoice from a French vendor Can I transfer funds to pay it How",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money to someone in France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I send some money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer my money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I want to transfer money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I send money to a person in Sweden",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you help me wire money to Spain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Is it possible to move money to a bank outside of Denmark",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please inform me more about transferring money overseas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can money be sent outside Europe",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I need to do to send money to someone outside of Europe",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please help me transfer money to france",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "May I transfer money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I want to transfer money to russia, how can I do this",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please help me pay a bill from France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I transfer money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I'm in the Netherlands and I need to send money to France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you show me how to make a wire transfer to a friend overseas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money between ${country} and ${country}",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I'm trying to figure out how to send a transfer to Russia",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I need to do to transfer my money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What happens when I transfer funds overseas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I'd like assistance in sending money to a person in Denmark but don't know how",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to send money to Cuba",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to wire money to Spain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to transfer money to my mother in London can u help",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I cannot transfer cash to my friend in Sweden",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer money to Europe and Africa",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I would like to switch money from this account to an account in Ireland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I'm having trouble transfering money",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Why is my transfer not going through to Sweden",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "can i get cash from italy to here",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I find out more about transferring money around the world",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Is there a way I can send money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What are the ways to transfer money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer overseas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I send money from the Netherlands to Asia",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I am in need of assistance with making a wire transfer to someone in Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I move some money to a new place in Ireland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I wire transfer money overseas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How does transferring money internationally work",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer money to my family in my home country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Will there be a way to send money to the UK",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "how to i get money from italy",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I send money outside Europe",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please help me send money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What is the method for transferring money internationally",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I transfer to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What steps do I have to take to transfer money from belgium to china",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "can you help me transfer money to somebody in another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Will you let me send money to Russia",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you show me how to send money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I wish to transfer money to Germany but I am not sure how to complete this",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you assist me in making a money transfer to a relative who lives in Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please help me figure out how to send money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I send money to different countries",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need help to transfer money to France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can i transfer money to Russia",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can my money be transferred abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I get money from another place from Holland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I make a transfer to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Why can't I send money to Sweden",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you assist me with a transfer from Belgium to China",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I really need help please in sending money to France",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do i send money to other countries",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I get money from Italy to Holland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Is there a way you could help me send money to Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer between two countries",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can someone in another country get funds from me",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please tell me a way to send money to the UK",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I want to transfer money to ${country}",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need help to transfer money to Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Is it possible to transfer money to someone in different country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to send money abroad but don't know how",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What methods are there for sending money abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How is the money sent from Italy to Holland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What's the mechanism behind this international transfer",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need you help in transferring money to Canada",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What's the procedure to transfer money to a person in another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What's the process for transferring money to Canada",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need a step by step explanation of how international transfers proces",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you assist me in transferring money to a person outside of Europe",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Transferring money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I transfer money to America",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I want to transfer money out of the country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I send money to Russia",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to send money to a friend that lives in Poland",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "CAn I wire funds to pay a bill in france",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I find out how to send money to someone in the UK",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Which countries can money be sent to",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "how do i send some money to somebody in another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I transfer money from ${continent} to ${continent}",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I really need to learn more about sending money internationally",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to do a money transfer to Africa",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to get some funds to my family overseas, how do I do that",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Transfer from Netherlands to Asia please",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please help me with a money transfer to spain",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I wire money out of the country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need to get money transferred from belgium to china",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I send money overseas",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How do I transfer money from a bank in Denmark to one in China",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "How can I send money to ${country}",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

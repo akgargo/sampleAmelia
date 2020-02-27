@@ -1,0 +1,135 @@
+{
+  "id": "a3a6eea0-35a4-4cec-9368-32928271d70c",
+  "document": {
+    "id": "a24c0ec1-e65e-4eaf-b1d9-8def21a60b0f",
+    "name": "cwlentityColorTextActivityDataSet_2",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "cwlentityColorTextActivityDataSet_2",
+  "annotations": [
+    {
+      "text": "Air superiority blue",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "cwlFavColor",
+          "slotValue": "blue",
+          "startIndex": 16,
+          "endIndex": 20
+        }
+      ]
+    },
+    {
+      "text": "American brown the shade that brings me the most joy",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "cwlFavColor",
+          "slotValue": "brown",
+          "startIndex": 9,
+          "endIndex": 15
+        }
+      ]
+    },
+    {
+      "text": "An amazing color is often seen in cobalt blue.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "cwlFavColor",
+          "slotValue": "blue",
+          "startIndex": 41,
+          "endIndex": 45
+        }
+      ]
+    },
+    {
+      "text": "Betcha my fav color is wheat",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "cwlFavColor",
+          "slotValue": "wheat",
+          "startIndex": 23,
+          "endIndex": 28
+        }
+      ]
+    },
+    {
+      "text": "boston university red my choice",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "cwlFavColor",
+          "slotValue": "red",
+          "startIndex": 18,
+          "endIndex": 22
+        }
+      ]
+    },
+    {
+      "text": "By far I would have to say bitter lemon",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I choose the best of all hues which would be taupe",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Caribbean Green",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "cwlFavColor",
+          "slotValue": "Green",
+          "startIndex": 10,
+          "endIndex": 15
+        }
+      ]
+    },
+    {
+      "text": "cool grey",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "cwlFavColor",
+          "slotValue": "grey",
+          "startIndex": 5,
+          "endIndex": 9
+        }
+      ]
+    },
+    {
+      "text": "deciding is hard but I would select beige",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 2,
+    "minor": 0
+  }
+}

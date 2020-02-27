@@ -1,0 +1,173 @@
+[
+  {
+    "text": "Checking on getting connection to wifi for a company guest.",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Connection to internet for customer appointment",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "I'm tired",
+    "intents": [
+      "cwlTimeOff"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "start my demo",
+    "intents": [
+      "cwlDemo"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "During upcoming appointment, client wifi desirous",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Because of a meeting, have to obtain internet connection for client visiting.",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Date for client conversation next week and need connection for him",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Bringing someone to our organization who needs internet at our company.",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "I want to apply holidays",
+    "intents": [
+      "cwlTimeOff"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "I have holiday plan",
+    "intents": [
+      "cwlTimeOff"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "show me bdportal one",
+    "intents": [
+      "cwlDemo"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Can I have internet access for a guest to our company?",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Email check needed so guest needs internet access",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "Absolutely must get wifi access for some guests",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "I need to apply leave",
+    "intents": [
+      "cwlTimeOff"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "I need holiday",
+    "intents": [
+      "cwlTimeOff"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "A visitor coming to our company and needs to get online.",
+    "intents": [
+      "cwlGuestWifi"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "I want to rest",
+    "intents": [
+      "cwlTimeOff"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  },
+  {
+    "text": "start demo",
+    "intents": [
+      "cwlDemo"
+    ],
+    "spanlessEntities": [],
+    "speaker": "",
+    "slots": []
+  }
+]

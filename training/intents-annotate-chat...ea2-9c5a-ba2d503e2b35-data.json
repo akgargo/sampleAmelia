@@ -1,0 +1,50 @@
+{
+  "id": "fc48b565-744b-4da4-9cb4-6bc4ace0b9f7",
+  "document": {
+    "id": "c96527ef-86d4-498a-a597-8baabad53873",
+    "name": "intents-annotate-chat...ea2-9c5a-ba2d503e2b35",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "intents-annotate-chat...ea2-9c5a-ba2d503e2b35",
+  "annotations": [
+    {
+      "text": "User: What do I need to do to transfer abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: Can you show me how to send money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "User: I need help to transfer money to Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "Location",
+          "slotValue": "Germany",
+          "startIndex": 39,
+          "endIndex": 46
+        }
+      ]
+    }
+  ],
+  "revisionStatus": "ANNOTATION_COMPLETED",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

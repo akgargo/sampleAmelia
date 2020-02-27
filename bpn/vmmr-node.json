@@ -1,0 +1,57 @@
+{
+  "id": "cc1cb6d0-7f06-4bd5-ab23-6815c455e27e",
+  "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+  "name": "vmmr",
+  "type": "FOLDER",
+  "children": [
+    {
+      "id": "e49e5e40-14e8-41e3-9961-16bef7ccbbf8",
+      "parentPathId": "cc1cb6d0-7f06-4bd5-ab23-6815c455e27e",
+      "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+      "name": "SD_Skype",
+      "type": "FOLDER",
+      "children": [
+        {
+          "id": "7a840667-6da7-48a1-a349-88b677efc0b3",
+          "parentPathId": "e49e5e40-14e8-41e3-9961-16bef7ccbbf8",
+          "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+          "name": "Skype_Main",
+          "type": "MODEL",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "b5113add-ac03-4122-b821-32472a6cb035",
+      "parentPathId": "cc1cb6d0-7f06-4bd5-ab23-6815c455e27e",
+      "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+      "name": "child",
+      "type": "MODEL",
+      "children": []
+    },
+    {
+      "id": "2448e005-ca6d-429d-89ea-b3f910dc04c3",
+      "parentPathId": "cc1cb6d0-7f06-4bd5-ab23-6815c455e27e",
+      "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+      "name": "dummy",
+      "type": "MODEL",
+      "children": []
+    },
+    {
+      "id": "73dd6ade-0980-4f20-b391-e9f742e9a300",
+      "parentPathId": "cc1cb6d0-7f06-4bd5-ab23-6815c455e27e",
+      "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+      "name": "myTest",
+      "type": "MODEL",
+      "children": []
+    },
+    {
+      "id": "5a298242-703d-4807-9979-6abe7a12eb4b",
+      "parentPathId": "cc1cb6d0-7f06-4bd5-ab23-6815c455e27e",
+      "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+      "name": "testAnnotateUtterances",
+      "type": "MODEL",
+      "children": []
+    }
+  ]
+}

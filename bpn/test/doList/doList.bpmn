@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:prop="http://www.ipsoft.com/schema/bpmn/prop" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" name="doList" isExecutable="false">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>SequenceFlow_1spog3v</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1spog3v" sourceRef="StartEvent_1" targetRef="Task_0ybjinw"/>
+    <bpmn2:userTask id="Task_0ybjinw" name="say we have several locations to pick from">
+      <bpmn2:incoming>SequenceFlow_1spog3v</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0qrqwew</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_0qrqwew" sourceRef="Task_0ybjinw" targetRef="Task_1f8kw12"/>
+    <bpmn2:scriptTask id="Task_1f8kw12" name="suggest response" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_0qrqwew</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1o2l47o</bpmn2:outgoing>
+      <bpmn2:script>def formInputData = formInputDataBuilder.create()
+          .name("locationSelectionForm")
+          .allowedUserInputs("both")
+		  .instructions("strict")
+          .addField()
+              .name("locationSelectionField")
+              .fieldType("AutoComplete")
+              .postfixedSelectionUtterance("I select the location", "I select the location")
+              .addOption()
+                  .name("Franklin Lakes")
+                  .nameForDisplay("Ohio")
+                  .value("Franklin Lakes")
+                  .backToField()
+              .addOption()
+                  .name("Bangsar South")
+                  .nameForDisplay("Kuala Lumpur")
+                  .value("Bangsar South") 
+                  .backToField()
+              .backToForm()
+          .build();
+ 
+execution.setVariable('formInputData', formInputData.toString())</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_1o2l47o" sourceRef="Task_1f8kw12" targetRef="Task_0k4nrqz"/>
+    <bpmn2:userTask id="Task_0k4nrqz" name="ask &quot;Where would you like to go?&quot;">
+      <bpmn2:extensionElements>
+        <prop:property name="ask_first_pass_behavior" value="AlwaysAsk"/>
+        <prop:property name="ask_subsequent_pass_behavior" value="AlwaysAsk"/>
+        <prop:property name="form_input_data_variable" value="formInputData"/>
+        <prop:property name="user_task_hint_text" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_1o2l47o</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_088l1mq</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:endEvent id="EndEvent_010c5vf">
+      <bpmn2:incoming>SequenceFlow_008359c</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_088l1mq" sourceRef="Task_0k4nrqz" targetRef="Task_04u9ote"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_0jndtap" sourceRef="Task_04u9ote" targetRef="Task_1d5e61v"/>
+    <bpmn2:scriptTask id="Task_1d5e61v" name="creates chat notes" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_0jndtap</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1j3u782</bpmn2:outgoing>
+      <bpmn2:script>import groovy.json.JsonOutput
+ 
+def bucket = cmService.getBucketResources('mybucket')
+def selectedName = execution.getVariable("response")
+def imageExtension = ".PNG"
+
+for(i = 0; i &lt; bucket.size(); i++){
+    if(bucket[i].objectName().matches(selectedName.replaceAll(" ", "")+imageExtension)){
+        def imageId = bucket[i].objectId()
+        execution.setVariable('imageId', imageId.toString())
+    }
+}
+
+def imageId = execution.getVariable('imageId')
+
+def imageUrl = cmService.getResourceUrl(imageId)
+ 
+def payload = [
+    action       : 'addChatNotesIntegration',
+    componentType: 'ChatNote',
+    payload      : [
+        [
+        component    : 'ChatNote',
+        header       : 'Welcome to Amelia',
+        title        : 'Amelia Asks Questions',
+        subcomponents: [
+            [
+            subcomponent: 'Markup',
+            markupType  : 'ImageLarge',
+            label       : 'Carcrash',
+            imageBase64 : imageUrl,
+			label: 'Location Map',
+			description: selectedName+'\n\n\n'
+            ]
+        ]
+ 
+        ]
+    ]
+]
+ 
+def jsonString = JsonOutput.toJson(payload)
+
+execution.setVariable('jsonString',jsonString)</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_1j3u782" sourceRef="Task_1d5e61v" targetRef="Task_08me18p"/>
+    <bpmn2:userTask id="Task_08me18p" name="send the integration message jsonString">
+      <bpmn2:incoming>SequenceFlow_1j3u782</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_008359c</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_008359c" sourceRef="Task_08me18p" targetRef="EndEvent_010c5vf"/>
+    <bpmn2:userTask id="Task_04u9ote" name="say ${response}">
+      <bpmn2:incoming>SequenceFlow_088l1mq</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0jndtap</bpmn2:outgoing>
+    </bpmn2:userTask>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="176" y="170" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="149" y="206" width="90" height="20"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1spog3v_di" bpmnElement="SequenceFlow_1spog3v">
+        <di:waypoint x="212" y="188"/>
+        <di:waypoint x="276" y="188"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="199" y="167" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_0dpery3_di" bpmnElement="Task_0ybjinw">
+        <dc:Bounds x="276" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0qrqwew_di" bpmnElement="SequenceFlow_0qrqwew">
+        <di:waypoint x="396" y="188"/>
+        <di:waypoint x="438" y="188"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="372" y="167" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_159zize_di" bpmnElement="Task_1f8kw12">
+        <dc:Bounds x="438" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1o2l47o_di" bpmnElement="SequenceFlow_1o2l47o">
+        <di:waypoint x="558" y="188"/>
+        <di:waypoint x="592" y="188"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="531" y="167" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1m86wn8_di" bpmnElement="Task_0k4nrqz">
+        <dc:Bounds x="592" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_010c5vf_di" bpmnElement="EndEvent_010c5vf">
+        <dc:Bounds x="922" y="418" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="923" y="210" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_088l1mq_di" bpmnElement="SequenceFlow_088l1mq">
+        <di:waypoint x="712" y="188"/>
+        <di:waypoint x="755" y="188"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="748.5" y="167" width="0" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0jndtap_di" bpmnElement="SequenceFlow_0jndtap">
+        <di:waypoint x="815" y="228"/>
+        <di:waypoint x="815" y="273"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_0i3knvl_di" bpmnElement="Task_1d5e61v">
+        <dc:Bounds x="755" y="273" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1j3u782_di" bpmnElement="SequenceFlow_1j3u782">
+        <di:waypoint x="815" y="353"/>
+        <di:waypoint x="815" y="396"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_0g52l3l_di" bpmnElement="Task_08me18p">
+        <dc:Bounds x="755" y="396" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_008359c_di" bpmnElement="SequenceFlow_008359c">
+        <di:waypoint x="875" y="436"/>
+        <di:waypoint x="922" y="436"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_10v0853_di" bpmnElement="Task_04u9ote">
+        <dc:Bounds x="755" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

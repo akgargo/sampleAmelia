@@ -1,0 +1,34 @@
+{
+  "id": "8d2e024f-982d-4078-9b33-96e6e33e8ac8",
+  "document": {
+    "id": "5a60b7ba-8e6c-40ce-901e-336d2635250b",
+    "name": "myIntent62e925cd-b4a9-489f-a6dc-4fd6649b873b",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "myIntent62e925cd-b4a9-489f-a6dc-4fd6649b873b",
+  "annotations": [
+    {
+      "text": "Can I have internet access for a guest to our company ?",
+      "intents": [
+        "guestwifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Checking on getting connection to wifi for a company guest.",
+      "intents": [
+        "guestwifi"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "ANNOTATION_COMPLETED",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "bf8dbed9-3906-4889-81b8-8bedbdc9ffe8",
+  "document": {
+    "id": "527bfd3a-d4fc-44f4-a4f9-8a12ec915923",
+    "name": "transfer_money_abroad.3.0.TEXT_CLASSIFIER",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "transfer_money_abroad.3.0.TEXT_CLASSIFIER",
+  "annotations": [
+    {
+      "text": "transfer $",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I need help to transfer money to Germany",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "What do I need to do to transfer abroad",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can you show me how to send money to another country",
+      "intents": [
+        "transfer_money_abroad"
+      ],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

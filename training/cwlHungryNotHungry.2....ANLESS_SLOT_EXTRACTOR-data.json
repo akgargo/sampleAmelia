@@ -1,0 +1,196 @@
+{
+  "id": "aab99a6d-039e-4be6-bfbf-625069e0bac9",
+  "document": {
+    "id": "5702e8d4-28d9-4027-8afc-fddcf9e850f9",
+    "name": "cwlHungryNotHungry.2....ANLESS_SLOT_EXTRACTOR",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "cwlHungryNotHungry.2....ANLESS_SLOT_EXTRACTOR",
+  "annotations": [
+    {
+      "text": "any people around here who know anything about telephony",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "can't go on without taking a nap",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "dogs love to eat all day long",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "it's been a big relief winning the lottery",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "my life is completely busy and very hectic",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "not really interested in going to the zoo",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "please don't go it alone",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "really sunny outside today",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "that looks healthy but i don't want to join you for a run",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "truth be told, i have always taken care of myself",
+      "intents": [],
+      "spanlessEntities": [
+        ""
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "haven't eaten in days",
+      "intents": [],
+      "spanlessEntities": [
+        "hungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "i couldn't continue without something to eat",
+      "intents": [],
+      "spanlessEntities": [
+        "hungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "my stomach is so empty",
+      "intents": [],
+      "spanlessEntities": [
+        "hungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "no way to go on because must get yummy treats in belly",
+      "intents": [],
+      "spanlessEntities": [
+        "hungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "terribly hungry",
+      "intents": [],
+      "spanlessEntities": [
+        "hungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "huge breakfast and not hungry",
+      "intents": [],
+      "spanlessEntities": [
+        "notHungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "just had lunch and couldn't eat another bite",
+      "intents": [],
+      "spanlessEntities": [
+        "notHungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "no meal necessary as I am completely satiated",
+      "intents": [],
+      "spanlessEntities": [
+        "notHungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "totally full",
+      "intents": [],
+      "spanlessEntities": [
+        "notHungry"
+      ],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "we aren't in the mood to eat anything else",
+      "intents": [],
+      "spanlessEntities": [
+        "notHungry"
+      ],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

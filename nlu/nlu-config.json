@@ -1,0 +1,20 @@
+{
+  "autoTraining": true,
+  "intentThreshold": 0.0,
+  "enableCqa": false,
+  "ambiguityThreshold": 0.0,
+  "outOfDomainThreshold": 0.5,
+  "learnIntents": true,
+  "learnEntities": true,
+  "enableIntentCqa": true,
+  "enableDomainCqa": true,
+  "domainThreshold": 0.6,
+  "intentAmbiguityThreshold": 0.6,
+  "domainAmbiguityThreshold": 0.6,
+  "domainCqaThreshold": 0.3,
+  "intentCqaThreshold": 0.3,
+  "enableLearnEntitiesEdit": false,
+  "enableLearnIntentsEdit": false,
+  "testIntentThreshold": 0.5,
+  "testCqaThreshold": 0.5
+}

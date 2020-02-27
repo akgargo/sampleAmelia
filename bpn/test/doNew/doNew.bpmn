@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:prop="http://www.ipsoft.com/schema/bpmn/prop" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" name="doNew" isExecutable="false">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>SequenceFlow_195hdo8</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_0qrqwew" sourceRef="Task_0ybjinw" targetRef="Task_1f8kw12"/>
+    <bpmn2:scriptTask id="Task_1f8kw12" name="single selection button" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_0qrqwew</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1o2l47o</bpmn2:outgoing>
+      <bpmn2:script>def options = ['loc': 'Office Location',
+            'leave': 'Apply Leave',
+            'mc': 'Medical Leave',
+            'exit': 'Exit']
+  
+def fieldBuilder = formInputDataBuilder.create()
+      .name("singleChoiceButton")
+      .nameForDisplay("Single Choice Button")
+      .formType("sampleForm")
+      .staticSelectionUtterance("")
+      .allowedUserInputs("form_only")
+      .addField()
+        .name("SomeChoice")
+        .fieldType("singleSelection")
+        .postfixedSelectionUtterance("", "")
+  
+options.each {
+      fieldBuilder = fieldBuilder.addOption()
+        .name(it.value)
+        .value(it.key)
+        .backToField()
+}
+  
+def singleChoiceButton = fieldBuilder.backToForm()
+    .build()
+  
+execution.setVariable('singleChoiceButton', singleChoiceButton.toString())</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_1o2l47o" sourceRef="Task_1f8kw12" targetRef="Task_0k4nrqz"/>
+    <bpmn2:userTask id="Task_0k4nrqz" name="ask 'Please select one of the following: Office Location, Apply Leave, Medical Leave or Exit.'" default="SequenceFlow_1ae1eub">
+      <bpmn2:extensionElements>
+        <prop:property name="ask_first_pass_behavior" value="AlwaysAsk"/>
+        <prop:property name="ask_subsequent_pass_behavior" value="AlwaysAsk"/>
+        <prop:property name="form_input_data_variable" value="singleChoiceButton"/>
+        <prop:property name="user_task_hint_text" value="Select yes or no."/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_1o2l47o</bpmn2:incoming>
+      <bpmn2:incoming>SequenceFlow_08ecw16</bpmn2:incoming>
+      <bpmn2:incoming>SequenceFlow_1cil4vy</bpmn2:incoming>
+      <bpmn2:incoming>SequenceFlow_153qk4p</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0bcnklx</bpmn2:outgoing>
+      <bpmn2:outgoing>SequenceFlow_1pd0vh0</bpmn2:outgoing>
+      <bpmn2:outgoing>SequenceFlow_0p3kbk7</bpmn2:outgoing>
+      <bpmn2:outgoing>SequenceFlow_1ae1eub</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_0bcnklx" name="Office Location" sourceRef="Task_0k4nrqz" targetRef="Task_14x2ru5">
+      <bpmn2:extensionElements>
+        <prop:property name="expression" value="response:value().matches('loc')"/>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="SequenceFlow_1pd0vh0" name="Apply Leave" sourceRef="Task_0k4nrqz" targetRef="Task_1wbq9cy">
+      <bpmn2:extensionElements>
+        <prop:property name="expression" value="response:value().matches('leave')"/>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="SequenceFlow_0p3kbk7" name="Meducal Leave" sourceRef="Task_0k4nrqz" targetRef="Task_0wewcbc">
+      <bpmn2:extensionElements>
+        <prop:property name="expression" value="response:value().matches('mc')"/>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="SequenceFlow_1ae1eub" name="Exit" sourceRef="Task_0k4nrqz" targetRef="Task_0348e2m">
+      <bpmn2:extensionElements>
+        <prop:property name="expression" value="response:value().matches('exit')"/>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:userTask id="Task_14x2ru5" name="run the workflow doList">
+      <bpmn2:extensionElements>
+        <prop:property name="cm_title" value="MY Office"/>
+        <prop:property name="display_file_name" value="yes"/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_0bcnklx</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_08ecw16</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Task_1wbq9cy" name="run the workflow doDateRange">
+      <bpmn2:incoming>SequenceFlow_1pd0vh0</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1cil4vy</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Task_0wewcbc" name="run the workflow doMC">
+      <bpmn2:incoming>SequenceFlow_0p3kbk7</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_153qk4p</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:userTask id="Task_0ybjinw" name="say Hi ${firstName}, welcome to BDOne Portal">
+      <bpmn2:incoming>SequenceFlow_17ufshp</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0qrqwew</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:endEvent id="EndEvent_010c5vf">
+      <bpmn2:incoming>SequenceFlow_0dofnju</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1cil4vy" sourceRef="Task_1wbq9cy" targetRef="Task_0k4nrqz"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_08ecw16" sourceRef="Task_14x2ru5" targetRef="Task_0k4nrqz"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_153qk4p" sourceRef="Task_0wewcbc" targetRef="Task_0k4nrqz"/>
+    <bpmn2:scriptTask id="Task_0348e2m" name="create survey" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_1ae1eub</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1nt5cvp</bpmn2:outgoing>
+      <bpmn2:script>import groovy.json.JsonOutput
+ 
+def payload = [
+  action: "addChatInputIntegrationMessage",
+  payload: [
+    componentType: "MessageIntegration",
+    subComponentType: "Survey",
+        formMessageType: "survey",
+    data: [
+      surveyType: "emojis",
+      surveyData: [
+        [
+          label: "1",
+          value: 1
+        ],
+        [
+          label: "2",
+          value: 2
+        ],
+        [
+          label: "3",
+          value: 3
+        ],
+        [
+          label: "4",
+          value: 4
+        ],
+        [
+          label: "5",
+          value: 5
+        ]
+      ]
+    ]
+  ]
+]
+ 
+def jsonString = JsonOutput.toJson(payload)
+execution.setVariable("jsonString", jsonString)</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_1nt5cvp" sourceRef="Task_0348e2m" targetRef="Task_1fazktq"/>
+    <bpmn2:userTask id="Task_1fazktq" name="send the integration message jsonString">
+      <bpmn2:incoming>SequenceFlow_1nt5cvp</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_116geex</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_116geex" sourceRef="Task_1fazktq" targetRef="Task_0fkcaa9"/>
+    <bpmn2:userTask id="Task_0fkcaa9" name="ask &quot;Let us know your experience&quot;">
+      <bpmn2:incoming>SequenceFlow_116geex</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0a9ppmi</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_0a9ppmi" sourceRef="Task_0fkcaa9" targetRef="Task_0f6hip5"/>
+    <bpmn2:userTask id="Task_0f6hip5" name="say Thank you !">
+      <bpmn2:incoming>SequenceFlow_0a9ppmi</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0dofnju</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_0dofnju" sourceRef="Task_0f6hip5" targetRef="EndEvent_010c5vf"/>
+    <bpmn2:scriptTask id="Task_1ncnlgl" name="retrieve user info" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value=""/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_1fl1och</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_17ufshp</bpmn2:outgoing>
+      <bpmn2:script>def user = userService.getUser()
+def firstName = user.firstName()
+execution.setVariable("firstName", firstName);</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:userTask id="Task_09snxj2" name="say Demo started">
+      <bpmn2:incoming>SequenceFlow_195hdo8</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1fl1och</bpmn2:outgoing>
+    </bpmn2:userTask>
+    <bpmn2:sequenceFlow id="SequenceFlow_195hdo8" sourceRef="StartEvent_1" targetRef="Task_09snxj2"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_1fl1och" sourceRef="Task_09snxj2" targetRef="Task_1ncnlgl"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_17ufshp" sourceRef="Task_1ncnlgl" targetRef="Task_0ybjinw"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="51" y="182" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="149" y="206" width="90" height="20"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0qrqwew_di" bpmnElement="SequenceFlow_0qrqwew">
+        <di:waypoint x="576" y="200"/>
+        <di:waypoint x="612" y="200"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="372" y="167" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_159zize_di" bpmnElement="Task_1f8kw12">
+        <dc:Bounds x="612" y="160" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1o2l47o_di" bpmnElement="SequenceFlow_1o2l47o">
+        <di:waypoint x="732" y="200"/>
+        <di:waypoint x="777" y="200"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="531" y="167" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1m86wn8_di" bpmnElement="Task_0k4nrqz">
+        <dc:Bounds x="777" y="160" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0bcnklx_di" bpmnElement="SequenceFlow_0bcnklx">
+        <di:waypoint x="827" y="160"/>
+        <di:waypoint x="827" y="81"/>
+        <di:waypoint x="984" y="81"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="877" y="87" width="74" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1pd0vh0_di" bpmnElement="SequenceFlow_1pd0vh0">
+        <di:waypoint x="897" y="200"/>
+        <di:waypoint x="1013" y="200"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="931" y="203" width="60" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0p3kbk7_di" bpmnElement="SequenceFlow_0p3kbk7">
+        <di:waypoint x="892" y="239"/>
+        <di:waypoint x="892" y="307"/>
+        <di:waypoint x="1021" y="307"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="899" y="263" width="75" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1ae1eub_di" bpmnElement="SequenceFlow_1ae1eub">
+        <di:waypoint x="827" y="240"/>
+        <di:waypoint x="827" y="401"/>
+        <di:waypoint x="1179" y="401"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="974" y="378" width="20" height="14"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1vg0gkx_di" bpmnElement="Task_14x2ru5">
+        <dc:Bounds x="984" y="41" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_15skyoi_di" bpmnElement="Task_1wbq9cy">
+        <dc:Bounds x="1013" y="160" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_0q0hpgk_di" bpmnElement="Task_0wewcbc">
+        <dc:Bounds x="1021" y="267" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_058vvf3_di" bpmnElement="Task_0ybjinw">
+        <dc:Bounds x="456" y="160" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_010c5vf_di" bpmnElement="EndEvent_010c5vf">
+        <dc:Bounds x="1779" y="383" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="992" y="210" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1cil4vy_di" bpmnElement="SequenceFlow_1cil4vy">
+        <di:waypoint x="1013" y="184"/>
+        <di:waypoint x="897" y="184"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="930" y="167" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_08ecw16_di" bpmnElement="SequenceFlow_08ecw16">
+        <di:waypoint x="984" y="58"/>
+        <di:waypoint x="801" y="58"/>
+        <di:waypoint x="801" y="158"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_153qk4p_di" bpmnElement="SequenceFlow_153qk4p">
+        <di:waypoint x="1019" y="322"/>
+        <di:waypoint x="876" y="322"/>
+        <di:waypoint x="876" y="245"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="939" y="266" width="90" height="12"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_1gm3fvl_di" bpmnElement="Task_0348e2m">
+        <dc:Bounds x="1179" y="361" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1nt5cvp_di" bpmnElement="SequenceFlow_1nt5cvp">
+        <di:waypoint x="1299" y="401"/>
+        <di:waypoint x="1331" y="401"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_0sjcchk_di" bpmnElement="Task_1fazktq">
+        <dc:Bounds x="1331" y="361" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_116geex_di" bpmnElement="SequenceFlow_116geex">
+        <di:waypoint x="1451" y="401"/>
+        <di:waypoint x="1469" y="401"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_151d6aw_di" bpmnElement="Task_0fkcaa9">
+        <dc:Bounds x="1469" y="361" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0a9ppmi_di" bpmnElement="SequenceFlow_0a9ppmi">
+        <di:waypoint x="1589" y="401"/>
+        <di:waypoint x="1615" y="401"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_1elkfm8_di" bpmnElement="Task_0f6hip5">
+        <dc:Bounds x="1615" y="361" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0dofnju_di" bpmnElement="SequenceFlow_0dofnju">
+        <di:waypoint x="1735" y="401"/>
+        <di:waypoint x="1779" y="401"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_1fiwrhk_di" bpmnElement="Task_1ncnlgl">
+        <dc:Bounds x="294" y="160" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_0h8ixgu_di" bpmnElement="Task_09snxj2">
+        <dc:Bounds x="128" y="160" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_195hdo8_di" bpmnElement="SequenceFlow_195hdo8">
+        <di:waypoint x="87" y="200"/>
+        <di:waypoint x="128" y="200"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1fl1och_di" bpmnElement="SequenceFlow_1fl1och">
+        <di:waypoint x="248" y="200"/>
+        <di:waypoint x="294" y="200"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_17ufshp_di" bpmnElement="SequenceFlow_17ufshp">
+        <di:waypoint x="414" y="200"/>
+        <di:waypoint x="456" y="200"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

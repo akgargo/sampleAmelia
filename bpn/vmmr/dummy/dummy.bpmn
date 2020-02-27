@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:prop="http://www.ipsoft.com/schema/bpmn/prop" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" name="dummy" isExecutable="false">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>SequenceFlow_1ij4fv8</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1ij4fv8" sourceRef="StartEvent_1" targetRef="Task_104l330"/>
+    <bpmn2:scriptTask id="Task_104l330" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value="hello"/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_1ij4fv8</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0xun6et</bpmn2:outgoing>
+      <bpmn2:script>
+
+// def locations = tabularDataService.query("Locations").is("enabled", "true").list().values()
+
+// log.info(locations)
+
+// def locationInput = formInputDataBuilder.create()
+//     .name("locationSelectionForm")
+//     .nameForDisplay("Location Selection Form")
+//     .staticSelectionUtterance("")
+//     .allowedUserInputs("both")
+//     .addField()
+//         .name("locationSelectionField")
+//         .fieldType("AutoComplete")
+//         .postfixedSelectionUtterance("I select the location", "I select the location")
+// log.info('---------------------------------------')
+//     log.warn(locations.getClass().declaredMethods.name)
+// log.info('---------------------------------------')
+// log.info('---------------------------------------')
+// for (location in locations) {
+//     log.warn(location.getClass().declaredMethods.name)
+//     locationInput.addOption()
+//         .name(location.displayName)
+//         .value(location.snowName)
+//         .backToField()
+// }
+// locationInput = locationInput.backToForm().build()
+// log.info('---------------------------------------')
+// log.info(locationInput)
+// def x = locations.find { 
+//     it.snowName == locations.first().snowName
+// }
+// log.info(x)
+
+// //query to check if location requested is legacy carefusion site
+// def legacySite= locations.find { 
+//     it.snowName.toLowerCase() == locations.first().snowName.toLowerCase()
+// };
+// log.info("legacySite: $legacySite")
+
+// execution.setVariable('locationsMap', new java.util.ArrayList(locations))
+
+// if(legacySite.legacy == "true"/*legacyResult.size() &gt; 0*/) {legacyFlag=true;log.info("legacy true");
+// }</bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:endEvent id="EndEvent_0bs4jjx">
+      <bpmn2:incoming>SequenceFlow_0ebsk9m</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_0ebsk9m" sourceRef="Task_1xvruqx" targetRef="EndEvent_0bs4jjx"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_0xun6et" sourceRef="Task_104l330" targetRef="Task_1xvruqx"/>
+    <bpmn2:userTask id="Task_1xvruqx" name="run the workflow child">
+      <bpmn2:incoming>SequenceFlow_0xun6et</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_0ebsk9m</bpmn2:outgoing>
+    </bpmn2:userTask>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="180" y="170" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1ij4fv8_di" bpmnElement="SequenceFlow_1ij4fv8">
+        <di:waypoint x="216" y="188"/>
+        <di:waypoint x="295" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_0xk7bu2_di" bpmnElement="Task_104l330">
+        <dc:Bounds x="295" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_0bs4jjx_di" bpmnElement="EndEvent_0bs4jjx">
+        <dc:Bounds x="545" y="170" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0ebsk9m_di" bpmnElement="SequenceFlow_0ebsk9m">
+        <di:waypoint x="415" y="377"/>
+        <di:waypoint x="563" y="377"/>
+        <di:waypoint x="563" y="206"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0xun6et_di" bpmnElement="SequenceFlow_0xun6et">
+        <di:waypoint x="355" y="228"/>
+        <di:waypoint x="355" y="337"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="UserTask_17fqm5o_di" bpmnElement="Task_1xvruqx">
+        <dc:Bounds x="295" y="337" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

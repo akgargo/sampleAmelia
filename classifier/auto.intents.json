@@ -1,0 +1,20 @@
+{
+  "id": "bd6e5e27-7ac2-4b4c-8cbd-72b2aab50cb0",
+  "name": "auto.intents",
+  "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+  "revisions": [
+    {
+      "id": "c09ac3be-c0da-4466-8e16-76777780e3b9",
+      "name": "auto.intents",
+      "algorithm": "Trie-based matcher",
+      "status": "DEPLOYED",
+      "revisionNumber": {
+        "major": 1,
+        "minor": 0
+      },
+      "trainingSummary": "Training classifier: auto.intents, revision: 1.0 \nProcessing training examples for intent model 'auto.intents'...\nProcessing validation examples for intent model 'auto.intents'...\nProcessed training corpora for 'auto.intents' in 1.995 s\nTraining 'auto.intents' with 82 and 0 training/validation examples\nBuilt classifier trie from 82 training examples.\n\nFinished 'auto.intents' training in 14.42 ms\nFinished training classifier: auto.intents, revision: 1.0\n",
+      "evaluations": []
+    }
+  ],
+  "classifierType": "TEXT_CLASSIFIER"
+}

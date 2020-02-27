@@ -1,0 +1,23 @@
+{
+  "id": "fff34cb9-c5f7-4ddd-97a5-d2431f66be6a",
+  "name": "YahooWeather",
+  "code": "yahoo_weather",
+  "revisionNumber": {
+    "major": 2,
+    "minor": 0
+  },
+  "domainName": "BD CoE",
+  "domainId": "65e03585-771b-4db9-8a7d-8f81b866c237",
+  "description": "Pull weather data from Yahoo",
+  "mainContext": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:camel=\"http://camel.apache.org/schema/spring\" xsi:schemaLocation=\"http://www.springframework.org/schema/beans\r\n http://www.springframework.org/schema/beans/spring-beans-4.2.xsd\r\n http://camel.apache.org/schema/spring\r\n http://camel.apache.org/schema/spring/camel-spring.xsd\r\n\">\n    <!-- add a comment -->\n    <camel:camelContext id=\"mainContext\">\n        <camel:route id=\"route1\">\n            <camel:description layoutX=\"40\" layoutY=\"200\" layoutWidth=\"560\" layoutHeight=\"340\"/>\n            <camel:from id=\"mainRouteStart\" uri=\"direct:start\">\n                <camel:description layoutX=\"50\" layoutY=\"250\" layoutWidth=\"120\" layoutHeight=\"120\"/>\n            </camel:from>\n            <!-- you can also use other languages such as groovy, ognl, mvel, javascript etc. -->\n            <camel:to id=\"c4e63689-785e-4541-a927-0e0cc98241c6\" uri=\"https4://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&amp;format=json&amp;diagnostics=true&amp;env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&amp;callback=\">\n                <camel:description layoutX=\"200\" layoutY=\"250\" layoutWidth=\"120\" layoutHeight=\"120\"/>\n            </camel:to>\n            <camel:convertBodyTo type=\"java.lang.String\" id=\"d97f9150-aab8-11e7-a0a5-1d4f80ae85b9\">\n                <camel:description layoutX=\"345\" layoutY=\"250\" layoutWidth=\"120\" layoutHeight=\"120\"/>\n            </camel:convertBodyTo>\n            <camel:to uri=\"bean:varpop?method=moveToOutboundVariables(&apos;_body_&apos;)\" id=\"dde7ef60-a795-11e7-9c6e-b5575ac44e3c\">\n                <camel:description layoutX=\"480\" layoutY=\"250\" layoutWidth=\"120\" layoutHeight=\"120\"/>\n            </camel:to>\n        </camel:route>\n    </camel:camelContext>\n</beans>",
+  "propertySets": [
+    {
+      "id": "ae125835-c807-4e9a-8884-2c3564ffe86d",
+      "integrationPropertySetId": "ae125835-c807-4e9a-8884-2c3564ffe86d",
+      "name": "Internal Properties Since yahoo_weather 1.1",
+      "propertySetType": "FLOW"
+    }
+  ],
+  "properties": [],
+  "assets": []
+}

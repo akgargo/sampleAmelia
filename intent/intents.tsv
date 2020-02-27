@@ -1,0 +1,88 @@
+#	weather	weather	EXECUTE_BPN	WeatherMain	Get weather information for a city	Would you like to continue talking about the weather?	null	ACTIVE	null	{"keyPhrases":[],"keyPhraseCreatorType":"MANUAL","actionPhrase":"Check the weather in a given city"}	ALWAYS	SUSPEND	null	AUTOMATIC	null	null	CONTINUE	null	#
+#	cwlDemo	cwlDemo	EXECUTE_BPN	doNew	null	null	null	ACTIVE	null	{"keyPhrases":[],"keyPhraseCreatorType":"MANUAL","actionPhrase":"cwl demo"}	AUTOMATIC	SUSPEND	null	AUTOMATIC	null	null	CONTINUE	null	#
+#	builtins.fallback	builtins.fallback	NONE	null	Store the utterance for negative goal. It usually stores the misclassified annotated data and manual user negative utterances.	null	null	ACTIVE	null	null	AUTOMATIC	SUSPEND	null	AUTOMATIC	null	null	IGNORE	null	#
+#	cwlGuestWifi	cwlGuestWifi	EXECUTE_BPN	doDateRange	Guest Wifi	null	null	ACTIVE	null	{"keyPhrases":[],"keyPhraseCreatorType":"MANUAL","actionPhrase":null}	AUTOMATIC	SUSPEND	null	AUTOMATIC	null	null	CONTINUE	null	#
+#	cwlTimeOff	cwlTimeOff	EXECUTE_BPN	doDateRange	Request Time Off	null	null	ACTIVE	null	{"keyPhrases":[],"keyPhraseCreatorType":"MANUAL","actionPhrase":null}	AUTOMATIC	SUSPEND	null	AUTOMATIC	null	null	CONTINUE	null	#
+#	myTest	mytest	EXECUTE_BPN	null	null	null	null	ACTIVE	null	{"keyPhrases":[],"keyPhraseCreatorType":"MANUAL","actionPhrase":null}	AUTOMATIC	SUSPEND	null	AUTOMATIC	null	null	CONTINUE	null	#
+weather	what's the weather in Fahrenheit?
+weather	What is the weather?
+weather	tell me about denver?
+weather	about atmospheric condition today ?
+weather	climatic conditions today?
+weather	what's the weather in Denver?
+weather	what 's the conditions ?
+weather	tell me about weather today?
+weather	how is the weather
+weather	tell me about weather today?
+weather	about weather today?
+weather	tell me about climate
+weather	what 's the conditions in capital of Colorado ?
+weather	whats the weather now?
+weather	what 's the atmospheric condition in Mile-High City ?
+weather	about Dallas?
+weather	whats weather today?
+weather	what 's the atmospheric condition ?
+weather	what 's the conditions in Mile-High City ?
+weather	what's the weather?
+weather	what 's the conditions in capital of Colorado ?
+weather	tell me about climate
+weather	what 's the atmospheric condition ?
+weather	Check the weather in a given city
+weather	weather at ?
+weather	what's the weather in Fahrenheit?
+weather	weather at ?
+weather	today weather?
+weather	weather
+weather	what's the weather in this city?
+weather	about weather today?
+weather	is the weather nice
+weather	about conditions today ?
+weather	weather at Denver?
+weather	what 's the conditions in Mile-High City ?
+weather	give me the weather
+weather	What is the weather at Denver?
+weather	what 's the atmospheric condition in capital of Colorado ?
+weather	what's the weather?
+weather	what 's the atmospheric condition in Mile-High City ?
+weather	about conditions today ?
+weather	tell me about denver?
+weather	what's the weather in this city?
+weather	today weather?
+weather	what is the weather like
+weather	what 's the conditions ?
+weather	about atmospheric condition today ?
+weather	give me climate
+weather	what 's the atmospheric condition in capital of Colorado ?
+weather	whats weather today?
+weather	What is the weather at Denver?
+weather	climatic conditions today?
+weather	about Dallas?
+weather	What is the weather?
+weather	let's discuss about Denver
+weather	weather at Denver?
+weather	what's the weather in Denver?
+weather	let's discuss about Denver
+weather	weather
+weather	whats the weather now?
+cwlDemo	I need to access BDDemo
+cwlDemo	I need a ui demo
+cwlDemo	I want to demo today
+cwlDemo	I'm happy
+cwlDemo	cwl demo
+cwlDemo	I want to start demo
+cwlGuestWifi	During upcoming appointment, client wifi desirous
+cwlGuestWifi	Date for client conversation next week and need connection for him
+cwlGuestWifi	Email check needed so guest needs internet access
+cwlGuestWifi	Checking on getting connection to wifi for a company guest.
+cwlGuestWifi	Connection to internet for customer appointment
+cwlGuestWifi	A visitor coming to our company and needs to get online.
+cwlGuestWifi	Because of a meeting, have to obtain internet connection for client visiting.
+cwlGuestWifi	Absolutely must get wifi access for some guests
+cwlGuestWifi	Bringing someone to our organization who needs internet at our company.
+cwlGuestWifi	Can I have internet access for a guest to our company?
+cwlTimeOff	I want to rest
+cwlTimeOff	I need to apply leave
+cwlTimeOff	I'm tired
+cwlTimeOff	I need holiday
+cwlTimeOff	I want to apply holidays
+cwlTimeOff	I have holiday plan

@@ -1,0 +1,1384 @@
+{
+  "entities": [
+    {
+      "code": "allHotelDates",
+      "name": "allHotelDates",
+      "description": "parent entities for checkInDate, checkOutDate",
+      "datumType": "DATE",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [],
+      "annotations": [],
+      "normalizerParams": {
+        "type": "DATE",
+        "dateNormalizationType": "DEFAULT"
+      },
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "allTimeOffDates",
+      "name": "allTimeOffDates",
+      "datumType": "DATE",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [],
+      "annotations": [],
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "checkInDate",
+      "name": "checkInDate",
+      "datumType": "DATE",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [],
+      "annotations": [],
+      "normalizerParams": {
+        "type": "DATE",
+        "dateNormalizationType": "DEFAULT"
+      },
+      "parent": "allHotelDates",
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "checkOutDate",
+      "name": "checkOutDate",
+      "datumType": "DATE",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [],
+      "annotations": [],
+      "parent": "allHotelDates",
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "cwlFavColor",
+      "name": "cwlFavColor",
+      "description": "my first entity",
+      "datumType": "TEXT",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [
+        "What is ur fav color ?"
+      ],
+      "annotations": [],
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "cwlHungryNotHungry",
+      "name": "cwlHungryNotHungry",
+      "description": "my first spanless entity",
+      "datumType": "TEXT",
+      "spanless": true,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [
+        "How do you feel ?"
+      ],
+      "annotations": [
+        {
+          "value": "",
+          "text": "any people around here who know anything about telephony"
+        },
+        {
+          "value": "",
+          "text": "can't go on without taking a nap"
+        },
+        {
+          "value": "",
+          "text": "dogs love to eat all day long"
+        },
+        {
+          "value": "",
+          "text": "it's been a big relief winning the lottery"
+        },
+        {
+          "value": "",
+          "text": "my life is completely busy and very hectic"
+        },
+        {
+          "value": "",
+          "text": "not really interested in going to the zoo"
+        },
+        {
+          "value": "",
+          "text": "please don't go it alone"
+        },
+        {
+          "value": "",
+          "text": "really sunny outside today"
+        },
+        {
+          "value": "",
+          "text": "that looks healthy but i don't want to join you for a run"
+        },
+        {
+          "value": "",
+          "text": "truth be told, i have always taken care of myself"
+        },
+        {
+          "value": "hungry",
+          "text": "haven't eaten in days"
+        },
+        {
+          "value": "hungry",
+          "text": "i couldn't continue without something to eat"
+        },
+        {
+          "value": "hungry",
+          "text": "my stomach is so empty"
+        },
+        {
+          "value": "hungry",
+          "text": "no way to go on because must get yummy treats in belly"
+        },
+        {
+          "value": "hungry",
+          "text": "terribly hungry"
+        },
+        {
+          "value": "notHungry",
+          "text": "huge breakfast and not hungry"
+        },
+        {
+          "value": "notHungry",
+          "text": "just had lunch and couldn't eat another bite"
+        },
+        {
+          "value": "notHungry",
+          "text": "no meal necessary as I am completely satiated"
+        },
+        {
+          "value": "notHungry",
+          "text": "totally full"
+        },
+        {
+          "value": "notHungry",
+          "text": "we aren't in the mood to eat anything else"
+        }
+      ],
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "leaveEndDate",
+      "name": "leaveEndDate",
+      "datumType": "DATE",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [],
+      "annotations": [],
+      "normalizerParams": {
+        "type": "DATE",
+        "dateNormalizationType": "DEFAULT"
+      },
+      "parent": "allTimeOffDates",
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "leaveStartDate",
+      "name": "leaveStartDate",
+      "datumType": "DATE",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [],
+      "annotations": [],
+      "normalizerParams": {
+        "type": "DATE",
+        "dateNormalizationType": "DEFAULT"
+      },
+      "parent": "allTimeOffDates",
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "location",
+      "name": "location",
+      "description": "UAT 1",
+      "datumType": "TEXT",
+      "spanless": true,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [
+        "what is your location"
+      ],
+      "annotations": [
+        {
+          "value": "AL021 - USA AL - Birmingham - Vestavia",
+          "text": "AL021 - USA AL - Birmingham - Vestavia"
+        },
+        {
+          "value": "ARE01 - ARE Dubai - Middle East",
+          "text": "ARE01 - ARE Dubai - Middle East"
+        },
+        {
+          "value": "ARE31 - ARE Dubai - Arif and Bintoak Bldg",
+          "text": "ARE31 - ARE Dubai - Arif and Bintoak Bldg"
+        },
+        {
+          "value": "ARG01 - ARG Buenos - Aires San Martin",
+          "text": "ARG01 - ARG Buenos - Aires San Martin"
+        },
+        {
+          "value": "AUS01 - Seven Hills",
+          "text": "AUS01 - Seven Hills"
+        },
+        {
+          "value": "AUS31 - Brisbane",
+          "text": "AUS31 - Brisbane"
+        },
+        {
+          "value": "AUS32 - AUS Melbourne",
+          "text": "AUS32 - AUS Melbourne"
+        },
+        {
+          "value": "AUS33 - AUS Adelaide",
+          "text": "AUS33 - AUS Adelaide"
+        },
+        {
+          "value": "AUS34 - AUS Perth",
+          "text": "AUS34 - AUS Perth"
+        },
+        {
+          "value": "AUS35 - AUS Sydney - North Ryde",
+          "text": "AUS35 - AUS Sydney - North Ryde"
+        },
+        {
+          "value": "AUT31 - AUT Schwechat - Am Concorde Pk",
+          "text": "AUT31 - AUT Schwechat - Am Concorde Pk"
+        },
+        {
+          "value": "AUT31 - AUT Wien - RinnbÃ¶ckstrasse",
+          "text": "AUT31 - AUT Wien - RinnbÃ¶ckstrasse"
+        },
+        {
+          "value": "AUT32 - AUT Vienna - Handelskai",
+          "text": "AUT32 - AUT Vienna - Handelskai"
+        },
+        {
+          "value": "AZ031 - USA AZ - Nogales",
+          "text": "AZ031 - USA AZ - Nogales"
+        },
+        {
+          "value": "BEL01 - BEL Vilvoorde - Leuvensesteenweg",
+          "text": "BEL01 - BEL Vilvoorde - Leuvensesteenweg"
+        },
+        {
+          "value": "BEL02 - BEL Drogenbos - Humaniteislaan",
+          "text": "BEL02 - BEL Drogenbos - Humaniteislaan"
+        },
+        {
+          "value": "BEL31 - Belgium, Erembodegem",
+          "text": "BEL31 - Belgium, Erembodegem"
+        },
+        {
+          "value": "BEL32 - Belgium, Temse",
+          "text": "BEL32 - Belgium, Temse"
+        },
+        {
+          "value": "BGD31 - BGD Dhaka - Rupayan Karim Tower",
+          "text": "BGD31 - BGD Dhaka - Rupayan Karim Tower"
+        },
+        {
+          "value": "BIH01 - Bosnia Cazin",
+          "text": "BIH01 - Bosnia Cazin"
+        },
+        {
+          "value": "BRA10 - BRA Cotia - Parque Industrial San Jose",
+          "text": "BRA10 - BRA Cotia - Parque Industrial San Jose"
+        },
+        {
+          "value": "BRA31 - BRA Araucaria - Curitiba Exped",
+          "text": "BRA31 - BRA Araucaria - Curitiba Exped"
+        },
+        {
+          "value": "BRA32 - BRA Sao Paulo - Chacara Santo Antonio",
+          "text": "BRA32 - BRA Sao Paulo - Chacara Santo Antonio"
+        },
+        {
+          "value": "BRA33 - BRA Juiz de Fora - Francisco Bernardino",
+          "text": "BRA33 - BRA Juiz de Fora - Francisco Bernardino"
+        },
+        {
+          "value": "BRA34 - BRA Curitiba - Rua Ciro Correia Pereira",
+          "text": "BRA34 - BRA Curitiba - Rua Ciro Correia Pereira"
+        },
+        {
+          "value": "BRA35 - BRA Osasco - PraÃ§a AgrÃ­cola La paz Tristante",
+          "text": "BRA35 - BRA Osasco - PraÃ§a AgrÃ­cola La paz Tristante"
+        },
+        {
+          "value": "BRA37 - BRA ItajaÃ­ - Santa Catarina",
+          "text": "BRA37 - BRA ItajaÃ­ - Santa Catarina"
+        },
+        {
+          "value": "C034 - USA NC - Creedmoor Alaris",
+          "text": "C034 - USA NC - Creedmoor Alaris"
+        },
+        {
+          "value": "CA002 - USA CA - San Diego Bldg A and B",
+          "text": "CA002 - USA CA - San Diego Bldg A and B"
+        },
+        {
+          "value": "CA010 - Sirigen",
+          "text": "CA010 - Sirigen"
+        },
+        {
+          "value": "CA028_OLD_MCG_2 - San Diego - HQ Blds A and B",
+          "text": "CA028_OLD_MCG_2 - San Diego - HQ Blds A and B"
+        },
+        {
+          "value": "CA142 - USA CA - San Diego - Otay Mesa",
+          "text": "CA142 - USA CA - San Diego - Otay Mesa"
+        },
+        {
+          "value": "CA150 - USA CA - Yorba Linda",
+          "text": "CA150 - USA CA - Yorba Linda"
+        },
+        {
+          "value": "CA151 - USA CA - Palm Springs",
+          "text": "CA151 - USA CA - Palm Springs"
+        },
+        {
+          "value": "CA154 - USA CA - San Diego TC Bldg C and D",
+          "text": "CA154 - USA CA - San Diego TC Bldg C and D"
+        },
+        {
+          "value": "CA170 - USA CA - Carlsbad CF Aviation",
+          "text": "CA170 - USA CA - Carlsbad CF Aviation"
+        },
+        {
+          "value": "CA175 - USA CA - Ontario, Wall Street",
+          "text": "CA175 - USA CA - Ontario, Wall Street"
+        },
+        {
+          "value": "CA231 - USA CA - Menlo Park",
+          "text": "CA231 - USA CA - Menlo Park"
+        },
+        {
+          "value": "CA232 - USA CA - Redlands Distribution Ctr",
+          "text": "CA232 - USA CA - Redlands Distribution Ctr"
+        },
+        {
+          "value": "CA233 - USA CA - San Diego (BDB)",
+          "text": "CA233 - USA CA - San Diego (BDB)"
+        },
+        {
+          "value": "CA234 - USA CA - San Diego (Diagnostic Sys.)",
+          "text": "CA234 - USA CA - San Diego (Diagnostic Sys.)"
+        },
+        {
+          "value": "CA235 - USA CA - San Jose",
+          "text": "CA235 - USA CA - San Jose"
+        },
+        {
+          "value": "CA236 - USA CA - San Jose (Reagents)",
+          "text": "CA236 - USA CA - San Jose (Reagents)"
+        },
+        {
+          "value": "CA237 - La Brea - R and D Infusion Disposables",
+          "text": "CA237 - La Brea - R and D Infusion Disposables"
+        },
+        {
+          "value": "CAN01 - CAN Quebec - St-Vallier Street",
+          "text": "CAN01 - CAN Quebec - St-Vallier Street"
+        },
+        {
+          "value": "CAN31 - CAN Mississauga - Derry Road West",
+          "text": "CAN31 - CAN Mississauga - Derry Road West"
+        },
+        {
+          "value": "CAN32 - CAN Quebec - GeneOhm Sciences",
+          "text": "CAN32 - CAN Quebec - GeneOhm Sciences"
+        },
+        {
+          "value": "CAN33 - CAN Mississauga - Tech Avenue",
+          "text": "CAN33 - CAN Mississauga - Tech Avenue"
+        },
+        {
+          "value": "CAN34 - Oakville",
+          "text": "CAN34 - Oakville"
+        },
+        {
+          "value": "CHE02 - CHE Eysins",
+          "text": "CHE02 - CHE Eysins"
+        },
+        {
+          "value": "CHE02 - CHE Rolle - A-One Business Centre",
+          "text": "CHE02 - CHE Rolle - A-One Business Centre"
+        },
+        {
+          "value": "CHE31 - CHE Basel - Binninger Str",
+          "text": "CHE31 - CHE Basel - Binninger Str"
+        },
+        {
+          "value": "CHL31 - CHL Santiago - Reg Metropolitana",
+          "text": "CHL31 - CHL Santiago - Reg Metropolitana"
+        },
+        {
+          "value": "CHL32 - CHL Santiago - Chile Shared Service Center",
+          "text": "CHL32 - CHL Santiago - Chile Shared Service Center"
+        },
+        {
+          "value": "CHN03 - CHN Shanghai Times Square",
+          "text": "CHN03 - CHN Shanghai Times Square"
+        },
+        {
+          "value": "CHN08 - CHN Guangzhou - Zhu Jiang East Rd",
+          "text": "CHN08 - CHN Guangzhou - Zhu Jiang East Rd"
+        },
+        {
+          "value": "CHN11 - CHN Shenzhen - KTL",
+          "text": "CHN11 - CHN Shenzhen - KTL"
+        },
+        {
+          "value": "CHN12 - CHN Shanghai - Jinqiao",
+          "text": "CHN12 - CHN Shanghai - Jinqiao"
+        },
+        {
+          "value": "CHN13 - CHN Beijing - Fengtai District",
+          "text": "CHN13 - CHN Beijing - Fengtai District"
+        },
+        {
+          "value": "CHN31 - CHN Guangzhou - Jie Tai Plaza",
+          "text": "CHN31 - CHN Guangzhou - Jie Tai Plaza"
+        },
+        {
+          "value": "CHN32 - CHN Suzhou - Jiangsu Province",
+          "text": "CHN32 - CHN Suzhou - Jiangsu Province"
+        },
+        {
+          "value": "CHN33 - CHN Beijing - China Central Place",
+          "text": "CHN33 - CHN Beijing - China Central Place"
+        },
+        {
+          "value": "CHN34 - CHN Shanghai - JingAn Kerry Centre",
+          "text": "CHN34 - CHN Shanghai - JingAn Kerry Centre"
+        },
+        {
+          "value": "CHN35 - CHN Chengdu - Jinjiang Int'l Bldg",
+          "text": "CHN35 - CHN Chengdu - Jinjiang Int'l Bldg"
+        },
+        {
+          "value": "CHN36 - CHN Hangzhou - Guangli Tower",
+          "text": "CHN36 - CHN Hangzhou - Guangli Tower"
+        },
+        {
+          "value": "CHN37 - CHN Jinan - Hualu Tower",
+          "text": "CHN37 - CHN Jinan - Hualu Tower"
+        },
+        {
+          "value": "CHN38 - CHN Nanjing - Int'l Finance Centre",
+          "text": "CHN38 - CHN Nanjing - Int'l Finance Centre"
+        },
+        {
+          "value": "CHN39 - CHN Shenyang - China Res Bldg",
+          "text": "CHN39 - CHN Shenyang - China Res Bldg"
+        },
+        {
+          "value": "CHN40 - CHN Tianjin - The Exchange 1",
+          "text": "CHN40 - CHN Tianjin - The Exchange 1"
+        },
+        {
+          "value": "CHN41 - CHN Xian - Kaiai Mansion",
+          "text": "CHN41 - CHN Xian - Kaiai Mansion"
+        },
+        {
+          "value": "CHN42 - CHN Wuhan - New World Int'l Trade Centre",
+          "text": "CHN42 - CHN Wuhan - New World Int'l Trade Centre"
+        },
+        {
+          "value": "CHN43 - CHN Chongqing - Metropolitan Tower",
+          "text": "CHN43 - CHN Chongqing - Metropolitan Tower"
+        },
+        {
+          "value": "CHN44 - CHN Changsha - Hunan Province",
+          "text": "CHN44 - CHN Changsha - Hunan Province"
+        },
+        {
+          "value": "CHN45 - CHN Zhengzhou - Yuda China World Trade Center",
+          "text": "CHN45 - CHN Zhengzhou - Yuda China World Trade Center"
+        },
+        {
+          "value": "CHN46 - CHN Kunming - Brilliant Plaza",
+          "text": "CHN46 - CHN Kunming - Brilliant Plaza"
+        },
+        {
+          "value": "CHN47 - CHN Urumqi - Tianshan District",
+          "text": "CHN47 - CHN Urumqi - Tianshan District"
+        },
+        {
+          "value": "CHN48 - CHN Suzhou - BD Rapid Diagnostics",
+          "text": "CHN48 - CHN Suzhou - BD Rapid Diagnostics"
+        },
+        {
+          "value": "CHN49 - CHN Suzhou - Jiangsu Province (Zone 2)",
+          "text": "CHN49 - CHN Suzhou - Jiangsu Province (Zone 2)"
+        },
+        {
+          "value": "CO101 - USA CO - Golden",
+          "text": "CO101 - USA CO - Golden"
+        },
+        {
+          "value": "COL31 - COL Cundinamarca - Bogota",
+          "text": "COL31 - COL Cundinamarca - Bogota"
+        },
+        {
+          "value": "CT031 - USA CT - Canaan",
+          "text": "CT031 - USA CT - Canaan"
+        },
+        {
+          "value": "CZE31 - CZE Prague - Praha",
+          "text": "CZE31 - CZE Prague - Praha"
+        },
+        {
+          "value": "DC031 - USA DC - Washington, DC",
+          "text": "DC031 - USA DC - Washington, DC"
+        },
+        {
+          "value": "DEU05 - DEU Baesweiler - Pascalstrasse",
+          "text": "DEU05 - DEU Baesweiler - Pascalstrasse"
+        },
+        {
+          "value": "DEU06 - Germany Wurmlingen",
+          "text": "DEU06 - Germany Wurmlingen"
+        },
+        {
+          "value": "DEU07 - DEU Hoechberg - Leibnizstrasse",
+          "text": "DEU07 - DEU Hoechberg - Leibnizstrasse"
+        },
+        {
+          "value": "DEU08 - DEU Kelberg - Rowastrasse",
+          "text": "DEU08 - DEU Kelberg - Rowastrasse"
+        },
+        {
+          "value": "DEU09 - Frankfurt",
+          "text": "DEU09 - Frankfurt"
+        },
+        {
+          "value": "DEU31 - DEU Plattling - Dr. Wandinger-Strasse",
+          "text": "DEU31 - DEU Plattling - Dr. Wandinger-Strasse"
+        },
+        {
+          "value": "DEU32 - DEU Heidelberg - Tullastrasse",
+          "text": "DEU32 - DEU Heidelberg - Tullastrasse"
+        },
+        {
+          "value": "DNK01 - Denmark Lyngby",
+          "text": "DNK01 - Denmark Lyngby"
+        },
+        {
+          "value": "DNK31 - DNK Brondby - Park Alle",
+          "text": "DNK31 - DNK Brondby - Park Alle"
+        },
+        {
+          "value": "DOM01 - Dominican Republic Santo Domingo",
+          "text": "DOM01 - Dominican Republic Santo Domingo"
+        },
+        {
+          "value": "EDC01 - production eDC (Konterra)",
+          "text": "EDC01 - production eDC (Konterra)"
+        },
+        {
+          "value": "EDC02 - non-production eDC (Zanker)",
+          "text": "EDC02 - non-production eDC (Zanker)"
+        },
+        {
+          "value": "ESP02 - ESP Madrid - Edificio Veganova",
+          "text": "ESP02 - ESP Madrid - Edificio Veganova"
+        },
+        {
+          "value": "ESP08 - ESP Algete - Rio Manzanares",
+          "text": "ESP08 - ESP Algete - Rio Manzanares"
+        },
+        {
+          "value": "ESP09 - Spain Almaraz",
+          "text": "ESP09 - Spain Almaraz"
+        },
+        {
+          "value": "ESP11 - Spain Malaga ARX",
+          "text": "ESP11 - Spain Malaga ARX"
+        },
+        {
+          "value": "ESP12 - ESP Malaga - Camino de Casabermeja",
+          "text": "ESP12 - ESP Malaga - Camino de Casabermeja"
+        },
+        {
+          "value": "ESP31 - ESP Huesca - Fraga",
+          "text": "ESP31 - ESP Huesca - Fraga"
+        },
+        {
+          "value": "ESP32 - ESP San Agustin del Guadalix",
+          "text": "ESP32 - ESP San Agustin del Guadalix"
+        },
+        {
+          "value": "FIN01 - FIN Vantaa - Ayritie",
+          "text": "FIN01 - FIN Vantaa - Ayritie"
+        },
+        {
+          "value": "FIN02 - FIN Helsinki - Kuortaneenkatu",
+          "text": "FIN02 - FIN Helsinki - Kuortaneenkatu"
+        },
+        {
+          "value": "FIN31 - FIN Helsinki - Pronssitie",
+          "text": "FIN31 - FIN Helsinki - Pronssitie"
+        },
+        {
+          "value": "FL031 - USA FL - Miami",
+          "text": "FL031 - USA FL - Miami"
+        },
+        {
+          "value": "FL115 - USA FL - Maitland",
+          "text": "FL115 - USA FL - Maitland"
+        },
+        {
+          "value": "FL118 - USA FL - Miami - Dadeland",
+          "text": "FL118 - USA FL - Miami - Dadeland"
+        },
+        {
+          "value": "FRA Rungis Cedex - BÃ¢timent Londres",
+          "text": "FRA Rungis Cedex - BÃ¢timent Londres"
+        },
+        {
+          "value": "FRA01 - FRA Chateaubriant - bis rue de la Renaissance",
+          "text": "FRA01 - FRA Chateaubriant - bis rue de la Renaissance"
+        },
+        {
+          "value": "FRA08 - FRA Voisins le Bretonneux",
+          "text": "FRA08 - FRA Voisins le Bretonneux"
+        },
+        {
+          "value": "FRA31 - FRA Le Pont-de-Claix Cedex",
+          "text": "FRA31 - FRA Le Pont-de-Claix Cedex"
+        },
+        {
+          "value": "FRA32 - Rungis Cedex - BÃ¢timent Londres",
+          "text": "FRA32 - Rungis Cedex - BÃ¢timent Londres"
+        },
+        {
+          "value": "Franklin Lakes",
+          "text": "Franklin Lakes"
+        },
+        {
+          "value": "GA031 - USA GA - Grayson",
+          "text": "GA031 - USA GA - Grayson"
+        },
+        {
+          "value": "GA066 - USA GA - Tucker",
+          "text": "GA066 - USA GA - Tucker"
+        },
+        {
+          "value": "GBR10 - GBR Basingstoke - The Crescent",
+          "text": "GBR10 - GBR Basingstoke - The Crescent"
+        },
+        {
+          "value": "GBR18 - GBR Sheffield - Albreda House",
+          "text": "GBR18 - GBR Sheffield - Albreda House"
+        },
+        {
+          "value": "GBR19 - GBR St. Albans - North Orbital Commercial Park",
+          "text": "GBR19 - GBR St. Albans - North Orbital Commercial Park"
+        },
+        {
+          "value": "GBR31 - GBR Swindon - Dorcan",
+          "text": "GBR31 - GBR Swindon - Dorcan"
+        },
+        {
+          "value": "GBR32 - GBR Oxford - Oxford Science Park",
+          "text": "GBR32 - GBR Oxford - Oxford Science Park"
+        },
+        {
+          "value": "GBR34 - GBR Plymouth - Belliver Industrial Estate",
+          "text": "GBR34 - GBR Plymouth - Belliver Industrial Estate"
+        },
+        {
+          "value": "GBR35 - GBR Winnersh - Eskdale Road",
+          "text": "GBR35 - GBR Winnersh - Eskdale Road"
+        },
+        {
+          "value": "GHA31 - GHA Osu - Secant Tower",
+          "text": "GHA31 - GHA Osu - Secant Tower"
+        },
+        {
+          "value": "HKG01 - Hong Kong",
+          "text": "HKG01 - Hong Kong"
+        },
+        {
+          "value": "HKG31 - HKG - Kowloon Bay",
+          "text": "HKG31 - HKG - Kowloon Bay"
+        },
+        {
+          "value": "HU - Hungary",
+          "text": "HU - Hungary"
+        },
+        {
+          "value": "HU - Tatabanya",
+          "text": "HU - Tatabanya"
+        },
+        {
+          "value": "HUN01 - HUN Budapest - Dobrentei",
+          "text": "HUN01 - HUN Budapest - Dobrentei"
+        },
+        {
+          "value": "HUN31 - HUN Kornye - Uveggyar",
+          "text": "HUN31 - HUN Kornye - Uveggyar"
+        },
+        {
+          "value": "IDN31 - IDN Jakarta - Sudirman Square Office Towers",
+          "text": "IDN31 - IDN Jakarta - Sudirman Square Office Towers"
+        },
+        {
+          "value": "IL060 - USA IL - Oak Forest",
+          "text": "IL060 - USA IL - Oak Forest"
+        },
+        {
+          "value": "IL062 - USA IL - Waukegan McGaw Pk KB",
+          "text": "IL062 - USA IL - Waukegan McGaw Pk KB"
+        },
+        {
+          "value": "IL064 - USA IL - Waukegan McGaw Pk MB",
+          "text": "IL064 - USA IL - Waukegan McGaw Pk MB"
+        },
+        {
+          "value": "IL065 - USA IL - Waukegan McGaw Pk WM",
+          "text": "IL065 - USA IL - Waukegan McGaw Pk WM"
+        },
+        {
+          "value": "IL066 - USA IL - Waukegan MWDC",
+          "text": "IL066 - USA IL - Waukegan MWDC"
+        },
+        {
+          "value": "IL067 - USA IL - Waukegan McGaw Pk KBD",
+          "text": "IL067 - USA IL - Waukegan McGaw Pk KBD"
+        },
+        {
+          "value": "IL069 - USA IL Chicago",
+          "text": "IL069 - USA IL Chicago"
+        },
+        {
+          "value": "IL070 - USA IL - Vernon Hills",
+          "text": "IL070 - USA IL - Vernon Hills"
+        },
+        {
+          "value": "IN031 - USA IN - Plainfield",
+          "text": "IN031 - USA IN - Plainfield"
+        },
+        {
+          "value": "IND01 - IND Hyderabad - APHB (IT)",
+          "text": "IND01 - IND Hyderabad - APHB (IT)"
+        },
+        {
+          "value": "IND04 - IND Chandigarh - DLF IT Park",
+          "text": "IND04 - IND Chandigarh - DLF IT Park"
+        },
+        {
+          "value": "IND20 - Gurgaon",
+          "text": "IND20 - Gurgaon"
+        },
+        {
+          "value": "IND21 - IND New Delhi - Saket District Ctr",
+          "text": "IND21 - IND New Delhi - Saket District Ctr"
+        },
+        {
+          "value": "IND22 - IND Chennai - Medavakkam High Rd",
+          "text": "IND22 - IND Chennai - Medavakkam High Rd"
+        },
+        {
+          "value": "IND31 - IND Gurgaon - Signature Towers B",
+          "text": "IND31 - IND Gurgaon - Signature Towers B"
+        },
+        {
+          "value": "IND32 - IND Rewari - Bawal",
+          "text": "IND32 - IND Rewari - Bawal"
+        },
+        {
+          "value": "IND33 - IND Mumbai - Chandivali Farm Road",
+          "text": "IND33 - IND Mumbai - Chandivali Farm Road"
+        },
+        {
+          "value": "IND34 - IND Bangalore - Cornich Al-Latheef",
+          "text": "IND34 - IND Bangalore - Cornich Al-Latheef"
+        },
+        {
+          "value": "IND35 - IND Kolkata - Naya Patty Pachimpara",
+          "text": "IND35 - IND Kolkata - Naya Patty Pachimpara"
+        },
+        {
+          "value": "IND39 - IND HCL Technologies, SEZ, Illandahikulam, Madurai",
+          "text": "IND39 - IND HCL Technologies, SEZ, Illandahikulam, Madurai"
+        },
+        {
+          "value": "IRL31 - IRL Limerick - Raheen Business Park",
+          "text": "IRL31 - IRL Limerick - Raheen Business Park"
+        },
+        {
+          "value": "IRL32 - IRL Drogheda - Donore Rd",
+          "text": "IRL32 - IRL Drogheda - Donore Rd"
+        },
+        {
+          "value": "IRL33 - IRL Dun Laoghaire - Pottery Road",
+          "text": "IRL33 - IRL Dun Laoghaire - Pottery Road"
+        },
+        {
+          "value": "ISR01 - ISR BD-Israel",
+          "text": "ISR01 - ISR BD-Israel"
+        },
+        {
+          "value": "ISR02 - ISR CME-Israel",
+          "text": "ISR02 - ISR CME-Israel"
+        },
+        {
+          "value": "ITA01 - ITA Cornaredo - Via Brera",
+          "text": "ITA01 - ITA Cornaredo - Via Brera"
+        },
+        {
+          "value": "ITA05 - Italy Florence",
+          "text": "ITA05 - Italy Florence"
+        },
+        {
+          "value": "ITA06 - ITA Villamarzana - Via G. Matteotti",
+          "text": "ITA06 - ITA Villamarzana - Via G. Matteotti"
+        },
+        {
+          "value": "ITA31 - ITA Milan - Via Enrico Cialdini",
+          "text": "ITA31 - ITA Milan - Via Enrico Cialdini"
+        },
+        {
+          "value": "JPN03 - JPN Bunkyo-ku - Koishikawa",
+          "text": "JPN03 - JPN Bunkyo-ku - Koishikawa"
+        },
+        {
+          "value": "JPN31 - JPN Fukuoka-shi - Hakata-ku",
+          "text": "JPN31 - JPN Fukuoka-shi - Hakata-ku"
+        },
+        {
+          "value": "JPN32 - JPN Hiroshima-shi - Naka-ku",
+          "text": "JPN32 - JPN Hiroshima-shi - Naka-ku"
+        },
+        {
+          "value": "JPN34 - JPN Kobe-shi - Distribution Center",
+          "text": "JPN34 - JPN Kobe-shi - Distribution Center"
+        },
+        {
+          "value": "JPN35 - JPN Nagoya-shi - Naka-ku",
+          "text": "JPN35 - JPN Nagoya-shi - Naka-ku"
+        },
+        {
+          "value": "JPN36 - JPN Suita-shi - Osaka",
+          "text": "JPN36 - JPN Suita-shi - Osaka"
+        },
+        {
+          "value": "JPN37 - JPN Sapporo - Chuo-ku",
+          "text": "JPN37 - JPN Sapporo - Chuo-ku"
+        },
+        {
+          "value": "JPN38 - JPN Tokyo - Minato-ku",
+          "text": "JPN38 - JPN Tokyo - Minato-ku"
+        },
+        {
+          "value": "JPN39 - JPN Fukushima-shi - Tsuchifune",
+          "text": "JPN39 - JPN Fukushima-shi - Tsuchifune"
+        },
+        {
+          "value": "JPN40 - JPN Tokyo Shinagawa-ku - Osaki CSC",
+          "text": "JPN40 - JPN Tokyo Shinagawa-ku - Osaki CSC"
+        },
+        {
+          "value": "KEN31 - KEN Nairobi - Africa Re Center",
+          "text": "KEN31 - KEN Nairobi - Africa Re Center"
+        },
+        {
+          "value": "KOR31 - KOR South Korea - Daegu",
+          "text": "KOR31 - KOR South Korea - Daegu"
+        },
+        {
+          "value": "KOR32 - KOR South Korea HQ - Seoul",
+          "text": "KOR32 - KOR South Korea HQ - Seoul"
+        },
+        {
+          "value": "KOR33 - KOR South Korea - Gwangiu",
+          "text": "KOR33 - KOR South Korea - Gwangiu"
+        },
+        {
+          "value": "KOR34 - KOR South Korea - DaeJeon",
+          "text": "KOR34 - KOR South Korea - DaeJeon"
+        },
+        {
+          "value": "KOR35 - KOR South Korea - Gyeongsangbukdo - Dabu",
+          "text": "KOR35 - KOR South Korea - Gyeongsangbukdo - Dabu"
+        },
+        {
+          "value": "KS015 - USA KS - Leawood Tomahawk Crk",
+          "text": "KS015 - USA KS - Leawood Tomahawk Crk"
+        },
+        {
+          "value": "LUX31 - LUX Luxembourg - rue d'Esch",
+          "text": "LUX31 - LUX Luxembourg - rue d'Esch"
+        },
+        {
+          "value": "MA002 - USA MA - Marlborough",
+          "text": "MA002 - USA MA - Marlborough"
+        },
+        {
+          "value": "MA033 - USA MA - Andover",
+          "text": "MA033 - USA MA - Andover"
+        },
+        {
+          "value": "MD031 - USA MD - Baltimore",
+          "text": "MD031 - USA MD - Baltimore"
+        },
+        {
+          "value": "MEX01 - MEX Mexicali - Cerrada De La Produccion",
+          "text": "MEX01 - MEX Mexicali - Cerrada De La Produccion"
+        },
+        {
+          "value": "MEX07 - Mexico Tijuana",
+          "text": "MEX07 - Mexico Tijuana"
+        },
+        {
+          "value": "MEX31 - MEX Nogales - Sonora",
+          "text": "MEX31 - MEX Nogales - Sonora"
+        },
+        {
+          "value": "MEX32 - MEX San Luis Potosi - Villa de Reyes",
+          "text": "MEX32 - MEX San Luis Potosi - Villa de Reyes"
+        },
+        {
+          "value": "MEX33 - MEX Mexico City - Lomas de Chapultepec",
+          "text": "MEX33 - MEX Mexico City - Lomas de Chapultepec"
+        },
+        {
+          "value": "MEX34 - MEX Cuautitlan Izcalli",
+          "text": "MEX34 - MEX Cuautitlan Izcalli"
+        },
+        {
+          "value": "MEX35 - MEX Cuautitlan Izcalli - Distribution Ctr",
+          "text": "MEX35 - MEX Cuautitlan Izcalli - Distribution Ctr"
+        },
+        {
+          "value": "MI012 - USA MI - Highland",
+          "text": "MI012 - USA MI - Highland"
+        },
+        {
+          "value": "MI032 - USA MI - Sterling Heights Phoenix",
+          "text": "MI032 - USA MI - Sterling Heights Phoenix"
+        },
+        {
+          "value": "MI041 - USA MI - Detroit (Union)",
+          "text": "MI041 - USA MI - Detroit (Union)"
+        },
+        {
+          "value": "MI042 - USA MI - Detroit (Non union)",
+          "text": "MI042 - USA MI - Detroit (Non union)"
+        },
+        {
+          "value": "MI043 - USA MI - Ann Arbor (Accuri)",
+          "text": "MI043 - USA MI - Ann Arbor (Accuri)"
+        },
+        {
+          "value": "MN013 - USA MN - Minneapolis Medina Rd",
+          "text": "MN013 - USA MN - Minneapolis Medina Rd"
+        },
+        {
+          "value": "MO019 - USA MO St.Louis",
+          "text": "MO019 - USA MO St.Louis"
+        },
+        {
+          "value": "MYS02 - MYS Kuala Lumpur - Jalan Kerinchi",
+          "text": "MYS02 - MYS Kuala Lumpur - Jalan Kerinchi"
+        },
+        {
+          "value": "MYS31 - MYS Kuala Lumpur - Damansara Heights",
+          "text": "MYS31 - MYS Kuala Lumpur - Damansara Heights"
+        },
+        {
+          "value": "MYS32 - MYS Bayan Lepas - Penang",
+          "text": "MYS32 - MYS Bayan Lepas - Penang"
+        },
+        {
+          "value": "NC041 - USA NC - Four Oaks",
+          "text": "NC041 - USA NC - Four Oaks"
+        },
+        {
+          "value": "NC042 - USA NC - Research Triangle Park",
+          "text": "NC042 - USA NC - Research Triangle Park"
+        },
+        {
+          "value": "NC043 - USA NC - Durham (Treyburn)",
+          "text": "NC043 - USA NC - Durham (Treyburn)"
+        },
+        {
+          "value": "NC044 - USA NC - Burlington (Tripath Imaging)",
+          "text": "NC044 - USA NC - Burlington (Tripath Imaging)"
+        },
+        {
+          "value": "NC045 - USA NC - Durham (Tripath Oncology)",
+          "text": "NC045 - USA NC - Durham (Tripath Oncology)"
+        },
+        {
+          "value": "NC046 - USA NC - Mebane",
+          "text": "NC046 - USA NC - Mebane"
+        },
+        {
+          "value": "NE031 - USA NE - Holdrege",
+          "text": "NE031 - USA NE - Holdrege"
+        },
+        {
+          "value": "NE032 - USA NE - Columbus (West)",
+          "text": "NE032 - USA NE - Columbus (West)"
+        },
+        {
+          "value": "NE033 - USA NE - Broken Bow",
+          "text": "NE033 - USA NE - Broken Bow"
+        },
+        {
+          "value": "NE034 - USA NE - Columbus (East)",
+          "text": "NE034 - USA NE - Columbus (East)"
+        },
+        {
+          "value": "NJ010 - USA NJ - Totowa 20 Campus Road",
+          "text": "NJ010 - USA NJ - Totowa 20 Campus Road"
+        },
+        {
+          "value": "NJ031 - USA NJ - Wilson ï¿½ BDRx",
+          "text": "NJ031 - USA NJ - Wilson ï¿½ BDRx"
+        },
+        {
+          "value": "NJ032 - USA NJ - Morristown Flight Operations",
+          "text": "NJ032 - USA NJ - Morristown Flight Operations"
+        },
+        {
+          "value": "NJ033 - USA NJ - Franklin Lakes",
+          "text": "NJ033 - USA NJ - Franklin Lakes"
+        },
+        {
+          "value": "NJ034 - USA NJ - Franklin Lakes(BD Overseas)",
+          "text": "NJ034 - USA NJ - Franklin Lakes(BD Overseas)"
+        },
+        {
+          "value": "NJDEFAULT - Corporate HQ Franklin Lakes",
+          "text": "NJDEFAULT - Corporate HQ Franklin Lakes"
+        },
+        {
+          "value": "NLD05 - NLD Houten - De Molen",
+          "text": "NLD05 - NLD Houten - De Molen"
+        },
+        {
+          "value": "NLD31 - NLD Drachten - Marconilaan",
+          "text": "NLD31 - NLD Drachten - Marconilaan"
+        },
+        {
+          "value": "NLD32 - NLD Etten Leur - Bredaseweg",
+          "text": "NLD32 - NLD Etten Leur - Bredaseweg"
+        },
+        {
+          "value": "NM008 - USA NM - Albuquerque - Osuna",
+          "text": "NM008 - USA NM - Albuquerque - Osuna"
+        },
+        {
+          "value": "NOR01 - Norway Asker",
+          "text": "NOR01 - Norway Asker"
+        },
+        {
+          "value": "NZL02 - NZL Auckland",
+          "text": "NZL02 - NZL Auckland"
+        },
+        {
+          "value": "NZL31 - NZL Auckland - Mt Wellington",
+          "text": "NZL31 - NZL Auckland - Mt Wellington"
+        },
+        {
+          "value": "OH014 - USA OH - Cleveland",
+          "text": "OH014 - USA OH - Cleveland"
+        },
+        {
+          "value": "OH057 - USA OH - Lakewood Detroit Ave",
+          "text": "OH057 - USA OH - Lakewood Detroit Ave"
+        },
+        {
+          "value": "OH064 - USA OH - Dublin FSS E Svc Ctr",
+          "text": "OH064 - USA OH - Dublin FSS E Svc Ctr"
+        },
+        {
+          "value": "OH070 - USA OH - Dublin - Metro Plc S",
+          "text": "OH070 - USA OH - Dublin - Metro Plc S"
+        },
+        {
+          "value": "OK003 - USA OK - Mannford",
+          "text": "OK003 - USA OK - Mannford"
+        },
+        {
+          "value": "PAK31 - PAK Gulberg - Lahore",
+          "text": "PAK31 - PAK Gulberg - Lahore"
+        },
+        {
+          "value": "PER31 - PER Ate - Lima",
+          "text": "PER31 - PER Ate - Lima"
+        },
+        {
+          "value": "PHL31 - PHL Taguig City - Manila",
+          "text": "PHL31 - PHL Taguig City - Manila"
+        },
+        {
+          "value": "POL31 - POL Warsaw - ul. Osmanska",
+          "text": "POL31 - POL Warsaw - ul. Osmanska"
+        },
+        {
+          "value": "POL32 - POL Wroclaw - Legnicka",
+          "text": "POL32 - POL Wroclaw - Legnicka"
+        },
+        {
+          "value": "POL32 - POL Wroclaw - Srubowa",
+          "text": "POL32 - POL Wroclaw - Srubowa"
+        },
+        {
+          "value": "PRI31 - PRI Cayey - Vicks Drive",
+          "text": "PRI31 - PRI Cayey - Vicks Drive"
+        },
+        {
+          "value": "PRI32 - PRI San Lorenzo - Cerro Gordo Inst Park",
+          "text": "PRI32 - PRI San Lorenzo - Cerro Gordo Inst Park"
+        },
+        {
+          "value": "PRI33 - PRI Cayey - Vicks Drive (BDB)",
+          "text": "PRI33 - PRI Cayey - Vicks Drive (BDB)"
+        },
+        {
+          "value": "PRI34 - PRI Juncos - Road 31",
+          "text": "PRI34 - PRI Juncos - Road 31"
+        },
+        {
+          "value": "PRT10 - PRT Lisbon - Carcavelos",
+          "text": "PRT10 - PRT Lisbon - Carcavelos"
+        },
+        {
+          "value": "PRT31 - PRT Porto - Rua Eng Ferreira Dias",
+          "text": "PRT31 - PRT Porto - Rua Eng Ferreira Dias"
+        },
+        {
+          "value": "ROU10 - ROU Bucharest - Iride Bus Pk (Genpact)",
+          "text": "ROU10 - ROU Bucharest - Iride Bus Pk (Genpact)"
+        },
+        {
+          "value": "RTP",
+          "text": "RTP"
+        },
+        {
+          "value": "RUS31 - RUS Moscow - Dvintsev Str",
+          "text": "RUS31 - RUS Moscow - Dvintsev Str"
+        },
+        {
+          "value": "San Diego",
+          "text": "San Diego"
+        },
+        {
+          "value": "San Jose",
+          "text": "San Jose"
+        },
+        {
+          "value": "SAU01 - SAU Riyadh - Al-Jeel Mdcl & Trading Co",
+          "text": "SAU01 - SAU Riyadh - Al-Jeel Mdcl & Trading Co"
+        },
+        {
+          "value": "SAU31 - SAU Riyadh - New Aqaria Center",
+          "text": "SAU31 - SAU Riyadh - New Aqaria Center"
+        },
+        {
+          "value": "SC031 - USA SC - Sumter",
+          "text": "SC031 - USA SC - Sumter"
+        },
+        {
+          "value": "SGP01 - SGP Marina Bay Financial Ctr - Keppel Towers",
+          "text": "SGP01 - SGP Marina Bay Financial Ctr - Keppel Towers"
+        },
+        {
+          "value": "SGP31 - SGP Tuas - Tuas Plant",
+          "text": "SGP31 - SGP Tuas - Tuas Plant"
+        },
+        {
+          "value": "SGP32 - SGP Tuas - Tuas Avenue SEA",
+          "text": "SGP32 - SGP Tuas - Tuas Avenue SEA"
+        },
+        {
+          "value": "SGP33 - SGP Tuas - Tuas Avenue",
+          "text": "SGP33 - SGP Tuas - Tuas Avenue"
+        },
+        {
+          "value": "SGP34 - SGP Tuas - Tuas Avenue RD",
+          "text": "SGP34 - SGP Tuas - Tuas Avenue RD"
+        },
+        {
+          "value": "SGP35 - SGP Biopolis District - Bioventure Centre",
+          "text": "SGP35 - SGP Biopolis District - Bioventure Centre"
+        },
+        {
+          "value": "SGP36 - SGP Asia Pacific Shared Service Center",
+          "text": "SGP36 - SGP Asia Pacific Shared Service Center"
+        },
+        {
+          "value": "SGP37 - SGP Tuas - Tuas Avenue PDC",
+          "text": "SGP37 - SGP Tuas - Tuas Avenue PDC"
+        },
+        {
+          "value": "SGP38 - SGP Tuas - Tuas Plant BDB",
+          "text": "SGP38 - SGP Tuas - Tuas Plant BDB"
+        },
+        {
+          "value": "SVK31 - SVK Slovakia Field",
+          "text": "SVK31 - SVK Slovakia Field"
+        },
+        {
+          "value": "SWE01 - SWE Sollentuna - Hammarbacken",
+          "text": "SWE01 - SWE Sollentuna - Hammarbacken"
+        },
+        {
+          "value": "SWE31 - SWE Helsingborg - Gasebacksvagen",
+          "text": "SWE31 - SWE Helsingborg - Gasebacksvagen"
+        },
+        {
+          "value": "SWE32 - SWE Stockholm - Arstaangsvagen",
+          "text": "SWE32 - SWE Stockholm - Arstaangsvagen"
+        },
+        {
+          "value": "SWE33 - SWE Gï¿½teborg - Carmel Pharma",
+          "text": "SWE33 - SWE Gï¿½teborg - Carmel Pharma"
+        },
+        {
+          "value": "THA31 - THA Bangkok - The Offices at Central World",
+          "text": "THA31 - THA Bangkok - The Offices at Central World"
+        },
+        {
+          "value": "TUR31 - TUR Istanbul - BÃ¼yÃ¼kdere Cad",
+          "text": "TUR31 - TUR Istanbul - BÃ¼yÃ¼kdere Cad"
+        },
+        {
+          "value": "TWN31 - TWN Taipei - Zhong Xiao E Rd",
+          "text": "TWN31 - TWN Taipei - Zhong Xiao E Rd"
+        },
+        {
+          "value": "TX031 - USA TX - San Antonio",
+          "text": "TX031 - USA TX - San Antonio"
+        },
+        {
+          "value": "TX033 - USA TX â€“ Austin",
+          "text": "TX033 - USA TX â€“ Austin"
+        },
+        {
+          "value": "TX050 - USA TX - San Antonio-Magic Dr",
+          "text": "TX050 - USA TX - San Antonio-Magic Dr"
+        },
+        {
+          "value": "TX138 - USA TX El Paso",
+          "text": "TX138 - USA TX El Paso"
+        },
+        {
+          "value": "US - San Diego",
+          "text": "US - San Diego"
+        },
+        {
+          "value": "US - San Diego PMG",
+          "text": "US - San Diego PMG"
+        },
+        {
+          "value": "UT031 - USA UT - Sandy",
+          "text": "UT031 - USA UT - Sandy"
+        },
+        {
+          "value": "VA030 - USA VA - Reston",
+          "text": "VA030 - USA VA - Reston"
+        },
+        {
+          "value": "VNM31 - VNM Ho Chi Minh City - Osic Building",
+          "text": "VNM31 - VNM Ho Chi Minh City - Osic Building"
+        },
+        {
+          "value": "VNM32 - VNM Hanoi City - Cau Giay",
+          "text": "VNM32 - VNM Hanoi City - Cau Giay"
+        },
+        {
+          "value": "WA001 - USA WA - Seattle -NE 43rd St",
+          "text": "WA001 - USA WA - Seattle -NE 43rd St"
+        },
+        {
+          "value": "WA031 - USA WA - Seattle",
+          "text": "WA031 - USA WA - Seattle"
+        },
+        {
+          "value": "WI031 - USA WI - Madison",
+          "text": "WI031 - USA WI - Madison"
+        },
+        {
+          "value": "WI032 - USA WI - Franklin",
+          "text": "WI032 - USA WI - Franklin"
+        },
+        {
+          "value": "ZAF01 - ZAF Cape Town - Oude Molen Bus Pk",
+          "text": "ZAF01 - ZAF Cape Town - Oude Molen Bus Pk"
+        },
+        {
+          "value": "ZAF02 - ZAF Durban - Pinetown",
+          "text": "ZAF02 - ZAF Durban - Pinetown"
+        },
+        {
+          "value": "ZAF03 - ZAF Midrand - Allandale Bus Park",
+          "text": "ZAF03 - ZAF Midrand - Allandale Bus Park"
+        },
+        {
+          "value": "ZAF31 - ZAF Johannesburg - Woodlands Dr",
+          "text": "ZAF31 - ZAF Johannesburg - Woodlands Dr"
+        },
+        {
+          "value": "ZMB31 - ZMB Woodlands - Independence Ave",
+          "text": "ZMB31 - ZMB Woodlands - Independence Ave"
+        }
+      ],
+      "fields": [],
+      "groups": []
+    },
+    {
+      "code": "userDeviceOrChannel",
+      "name": "userDeviceOrChannel",
+      "datumType": "CUSTOM_DATUM",
+      "spanless": false,
+      "overlaps": false,
+      "status": "ACTIVE",
+      "scopeType": "CONVERSATION",
+      "intents": [],
+      "questions": [],
+      "annotations": [],
+      "fields": [],
+      "groups": []
+    }
+  ]
+}

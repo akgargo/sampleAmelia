@@ -1,0 +1,597 @@
+{
+  "id": "263647d1-d542-408d-aeb1-607c4a23646a",
+  "document": {
+    "id": "910cc566-60b0-4598-81c2-1ecc25cbcc54",
+    "name": "cwlColors",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "cwlColors",
+  "annotations": [
+    {
+      "text": "Air superiority blue",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "American brown the shade that brings me the most joy",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "An amazing color is often seen in cobalt blue.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 11,
+          "endIndex": 17
+        }
+      ]
+    },
+    {
+      "text": "Betcha my fav color is wheat",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 14,
+          "endIndex": 20
+        }
+      ]
+    },
+    {
+      "text": "boston university red my choice",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "By far I would have to say bitter lemon",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Can I choose the best of all hues which would be taupe",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Caribbean Green",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cool grey",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "deciding is hard but I would select beige",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Definitely my selection would be soldier green.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "dark midnight blue has always been a good one",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Everytime i think about colors, i think of rosewood.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "colors",
+          "startIndex": 24,
+          "endIndex": 30
+        }
+      ]
+    },
+    {
+      "text": "Each of us has one that we love, and mine would be ebony",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Electric cyan the choice I would make.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Figuring this out is hard but quartz would be my choice.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "first and foremost I would go with emerald",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "fuchsia is the selection",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Got to have the color magenta.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 16,
+          "endIndex": 21
+        }
+      ]
+    },
+    {
+      "text": "Give me garnet any day",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "grape",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "I have always liked the color Navajo white.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 24,
+          "endIndex": 30
+        }
+      ]
+    },
+    {
+      "text": "Ideally black even if it isn't really a color but all colors",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 40,
+          "endIndex": 46
+        }
+      ]
+    },
+    {
+      "text": "indigo best one",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Just let me choose piggy pink.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "jasmine is the color I love best",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 15,
+          "endIndex": 21
+        }
+      ]
+    },
+    {
+      "text": "jezz that's a tough one but I'll go with lavender",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Khaki, although relatively neutral, would be my option.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Keeping in mind that I love all colors, but have to pick one so it's gonna have to be honeydew",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "colors",
+          "startIndex": 32,
+          "endIndex": 38
+        }
+      ]
+    },
+    {
+      "text": "Kindly give me indigo",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Love purple.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Let's see I'm gonna select flamingo pink",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Lemon chiffon be the tops",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "magenta",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Money makes the world go round so I take dollar bill thanks.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "My favorite color is blue.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 12,
+          "endIndex": 18
+        }
+      ]
+    },
+    {
+      "text": "never have I chosen before but if I had to, I would pick jelly bean blue.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Needing to pick floral white",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "nickel's the pick",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "One of the best hues out there is magenta.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Orange is by far the best.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Only color I can think of is red.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 5,
+          "endIndex": 11
+        }
+      ]
+    },
+    {
+      "text": "Pink makes me feel happy.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Please give me purple",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "probably would have to say something like mulberry",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Quite frankly, it'd be lemon chiffon.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Quick silver's my selection",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Quizzing me on this, I'd answer with saffron",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Red brings fire to our passion.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Really not sure but my selection's gonna be sangria",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Rarely have I been asked such a question but I will choose sapphire",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Sky blue is going to be the color of the year.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 28,
+          "endIndex": 34
+        }
+      ]
+    },
+    {
+      "text": "Such a great inquiry that I'll go with rust",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Seeing as I have always enjoyed the beach, my pick is sand",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "The best color is iris.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 9,
+          "endIndex": 15
+        }
+      ]
+    },
+    {
+      "text": "Totally has to be iguana green.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Tell ya what, I want scarlet",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Undeniably I would choose garnet.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Unsure but if I have to choose, I go with redwood",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "umber is a color and I have always been a fan",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 11,
+          "endIndex": 17
+        }
+      ]
+    },
+    {
+      "text": "very light malachite green",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Violet is my favorite flower and color.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": [
+        {
+          "slotName": "favColor",
+          "slotValue": "color",
+          "startIndex": 33,
+          "endIndex": 38
+        }
+      ]
+    },
+    {
+      "text": "vexed at having to choose just one but I think it's slate green.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "We enjoy sunshine so yellow would be lovely.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Well I love nature so definitely green.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "White is really most flattering to me.",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "yellow",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "You bet that I would select something like electric violet",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "Yearning to choose amethyst",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}

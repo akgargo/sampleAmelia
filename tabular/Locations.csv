@@ -1,0 +1,294 @@
+﻿Origin,snowName,displayName,legacy,enabled
+ISE,ARE31 - ARE Dubai - Arif and Bintoak Bldg,"Dubai, Arif, Bintoak",false,false
+ISE,ARG01 - ARG Buenos - Aires San Martin,"Buenos Aires, Argentina",false,true
+ISE,AUS31 - Brisbane,"Brisbane, Australia",false,true
+ISE,AUS35 - AUS Sydney - North Ryde,"Sydney, Australia",false,true
+ISE,AUT31 - AUT Schwechat - Am Concorde Pk,"Schwechat, Austria",false,true
+ISE,AUT31 - AUT Wien - Rinnböckstrasse,"Wien, Austria",false,true
+ISE,AUT32 - AUT Vienna - Handelskai,"Vienna, Austria",false,true
+ISE,AZ031 - USA AZ - Nogales,"Nogales, Arizona",false,true
+ISE,"BEL31 - Belgium, Erembodegem","Erembodegem, Belgium",false,true
+ISE,"BEL32 - Belgium, Temse","Temse, Belgium",false,true
+ISE,BIH01 - Bosnia Cazin,"Cazin, Bosnia (Legacy Carefusion)",true,true
+ISE,BRA31 - BRA Araucaria - Curitiba Exped,"Araucaria, Brazil",false,true
+ISE,BRA32 - BRA Sao Paulo - Chacara Santo Antonio,"Sao Paulo, Brazil (Legacy Carefusion)",true,true
+ISE,BRA33 - BRA Juiz de Fora - Francisco Bernardino,"Juiz de Fora, Brazil",false,true
+ISE,BRA35 - BRA Osasco - Praça Agrícola La paz Tristante,"Osasco, Brazil",false,true
+ISE,BRA37 - BRA Itajaí - Santa Catarina,"Itajai, Brazil",false,true
+ISE,CA002 - USA CA - San Diego Bldg A and B,"San Diego, California (Legacy Carefusion)",true,true
+ISE,CA010 - Sirigen,"San Diego, California (Sirigen) (Legacy Carefusion)",true,true
+ISE,CA028_OLD_MCG_2 - San Diego - HQ Blds A and B,"San Diego, California - Bldg A and B (Legacy Carefusion)",true,true
+ISE,CA142 - USA CA - San Diego - Otay Mesa,"San Diego, California - Otay Mesa",false,true
+ISE,CA154 - USA CA - San Diego TC Bldg C and D,"San Diego, California - Bldg C and D (Legacy Carefusion)",true,true
+ISE,CA231 - USA CA - Menlo Park,"Menlo Park, California",false,true
+ISE,CA232 - USA CA - Redlands Distribution Ctr,"Redlands, California",false,true
+ISE,CA233 - USA CA - San Diego (BDB),"San Diego, California (BDB) (Legacy Carefusion)",true,true
+ISE,CA234 - USA CA - San Diego (Diagnostic Sys.),"San Diego, California - Diagnostics",false,true
+ISE,CA235 - USA CA - San Jose,"San Jose, California",false,true
+ISE,CA236 - USA CA - San Jose (Reagents),"San Jose, California (Reagents)",false,true
+ISE,CA237 - La Brea - R and D Infusion Disposables,"Brea, California",false,true
+ISE,CAN01 - CAN Quebec - St-Vallier Street,"Quebec, Canada - St-Vallier Street",false,true
+ISE,CAN31 - CAN Mississauga - Derry Road West,"Mississauga, Ontario (Legacy Carefusion)",true,true
+ISE,CAN32 - CAN Quebec - GeneOhm Sciences,"Quebec City, Quebec",false,true
+ISE,CAN34 - Oakville,"Oakville, Ontario",false,true
+ISE,CHE02 - CHE Eysins,"Eysins, Switzerland (Legacy Carefusion)",true,true
+ISE,CHE02 - CHE Rolle - A-One Business Centre,,false,false
+ISE,CHE31 - CHE Basel - Binninger Str,"Allschwill, Switzerland",false,true
+ISE,CHL31 - CHL Santiago - Reg Metropolitana,"Santiago, Chile(Reg Metropolitana)",false,true
+ISE,CHL32 - CHL Santiago - Chile Shared Service Center,"Santiago, Chile(Service Center)",false,true
+ISE,CHN08 - CHN Guangzhou - Zhu Jiang East Rd,"Guangzhou, China",false,true
+ISE,CHN12 - CHN Shanghai - Jinqiao,"Shanghai, China",false,true
+ISE,CHN32 - CHN Suzhou - Jiangsu Province,Suzhou Jiangsu,false,false
+ISE,CHN33 - CHN Beijing - China Central Place,"Beijing, China",false,true
+ISE,CHN34 - CHN Shanghai - JingAn Kerry Centre,"Shanghai, China - JingAn Kerry Centre",false,true
+ISE,CHN35 - CHN Chengdu - Jinjiang Int'l Bldg,"Chengdu, China",false,true
+ISE,CHN36 - CHN Hangzhou - Guangli Tower,"Hangzhou, China",false,true
+ISE,CHN37 - CHN Jinan - Hualu Tower,"Jinan, China",false,true
+ISE,CHN47 - CHN Urumqi - Tianshan District,"Ürümqi, China",false,true
+ISE,CHN48 - CHN Suzhou - BD Rapid Diagnostics,"Suzhou, China (BD Rapid Diagnostics)",false,false
+ISE,CHN49 - CHN Suzhou - Jiangsu Province (Zone 2),"Suzhou, China (Jiangsu Province Zone 2)",false,true
+ISE,COL31 - COL Cundinamarca - Bogota,"Bogota, Colombia",false,true
+ISE,CT031 - USA CT - Canaan,"Canaan, Connecticut",false,true
+ISE,CZE31 - CZE Prague - Praha,"Praha, Prague",false,true
+ISE,"DC031 - USA DC - Washington, DC","Washington, DC",false,true
+ISE,DEU06 - Germany Wurmlingen,"Wurmlingen, Germany",false,true
+ISE,DEU08 - DEU Kelberg - Rowastrasse,"Kelberg, Germany",false,true
+ISE,DEU09 - Frankfurt,"Frankfurt, Germany (Legacy Carefusion)",true,true
+ISE,DEU32 - DEU Heidelberg - Tullastrasse,"Heidelberg, Germany",false,true
+ISE,DNK01 - Denmark Lyngby,"Lyngby, Denmark",false,true
+ISE,DNK31 - DNK Brondby - Park Alle,"Brondby, Denmark",false,true
+ISE,DOM01 - Dominican Republic Santo Domingo,"Santo Domingo, Dominican Republic",false,true
+ISE,ESP09 - Spain Almaraz,"Almaraz, Spain",false,true
+ISE,ESP11 - Spain Malaga ARX,"Malaga ARX, Spain",false,true
+ISE,ESP31 - ESP Huesca - Fraga,"Fraga, Spain",false,true
+ISE,ESP32 - ESP San Agustin del Guadalix,"San Augustin, Spain",false,true
+ISE,FIN31 - FIN Helsinki - Pronssitie,"Helsinki, Finland",false,true
+ISE,FL031 - USA FL - Miami,"Miami, Florida",false,true
+ISE,FL118 - USA FL - Miami - Dadeland,"Miami, Florida (Dadeland)",false,false
+ISE,FRA Rungis Cedex - Bâtiment Londres,,false,false
+ISE,FRA31 - FRA Le Pont-de-Claix Cedex,"Pont de Claix, France",false,true
+ISE,Franklin Lakes,,false,false
+ISE,GA031 - USA GA - Grayson,"Grayson, Georgia",false,true
+ISE,GBR31 - GBR Swindon - Dorcan,"Swindon, United Kingdom",false,true
+ISE,GBR32 - GBR Oxford - Oxford Science Park,"Oxford, United Kingdom",false,true
+ISE,GBR34 - GBR Plymouth - Belliver Industrial Estate,"Plymouth, United Kingdom",false,true
+ISE,GBR35 - GBR Winnersh - Eskdale Road,"Winnersh, United Kingdom",false,true
+ISE,GHA31 - GHA Osu - Secant Tower,"Osu, Ghana",false,true
+ISE,HKG31 - HKG - Kowloon Bay,"Kowloon Bay, Hong Kong",false,true
+ISE,HU - Hungary,,false,false
+ISE,HU - Tatabanya,"Tatabanya, Hungary (Legacy Carefusion)",true,true
+ISE,HUN31 - HUN Kornye - Uveggyar,"Kornye, Hungary",false,true
+ISE,IL069 - USA IL Chicago,"Chicago, Illinois (Data Center - Flexconnect Users)",false,true
+ISE,IL070 - USA IL - Vernon Hills,"Vernon Hills, Illinois (Legacy Carefusion)",true,true
+ISE,IN031 - USA IN - Plainfield,"Plainfield, Indiana",false,true
+ISE,IND04 - IND Chandigarh - DLF IT Park,"Chandigarh, India (Legacy Carefusion)",true,true
+ISE,IND22 - IND Chennai - Medavakkam High Rd,"Chennai, India",false,true
+ISE,IND31 - IND Gurgaon - Signature Towers B,"Gurgaon, India",false,true
+ISE,"IND39 - IND HCL Technologies, SEZ, Illandahikulam, Madurai","Madurai, India (HCL Technologies)",false,true
+ISE,IRL31 - IRL Limerick - Raheen Business Park,"Limerick, Ireland",false,true
+ISE,IRL32 - IRL Drogheda - Donore Rd,"Drogheda, Ireland",false,true
+ISE,IRL33 - IRL Dun Laoghaire - Pottery Road,"Dun Laoghaire, Ireland",false,true
+ISE,ISR01 - ISR BD-Israel,"Israel, Lapidot",false,true
+ISE,ISR02 - ISR CME-Israel,"Israel, CME",false,true
+ISE,ITA05 - Italy Florence,"Florence, Italy (Legacy Carefusion)",true,true
+ISE,ITA06 - ITA Villamarzana - Via G. Matteotti,"Villamarzana, Italy",false,true
+ISE,ITA31 - ITA Milan - Via Enrico Cialdini,"Milan, Italy",false,true
+ISE,JPN36 - JPN Suita-shi - Osaka,"Toyonakashi, Japan",false,true
+ISE,JPN38 - JPN Tokyo - Minato-ku,"Tokyo, Japan",false,true
+ISE,JPN39 - JPN Fukushima-shi - Tsuchifune,"Fukushima, Japan",false,true
+ISE,KEN31 - KEN Nairobi - Africa Re Center,"Nairobi, Kenya",false,true
+ISE,KOR32 - KOR South Korea HQ - Seoul,"Seoul, South Korea",false,true
+ISE,KOR34 - KOR South Korea - DaeJeon,"DaeJeon, South Korea",false,true
+ISE,MA033 - USA MA - Andover,"Andover, Massachusetts",false,true
+ISE,MD031 - USA MD - Baltimore,"Baltimore, Maryland",false,true
+ISE,MEX07 - Mexico Tijuana,"Tijuana, Mexico (Legacy Carefusion)",true,true
+ISE,MEX31 - MEX Nogales - Sonora,"Nogales, Sonora",false,true
+ISE,MEX32 - MEX San Luis Potosi - Villa de Reyes,"San Luis Potosi, Mexico",false,true
+ISE,MEX33 - MEX Mexico City - Lomas de Chapultepec,"Distrito Federal, Mexico",false,true
+ISE,MEX34 - MEX Cuautitlan Izcalli,"Cuautitlan Izcalli, Estado de México",false,true
+ISE,MEX35 - MEX Cuautitlan Izcalli - Distribution Ctr,"Cuautitlan Izcalli, Estado de México (Distribution)",false,true
+ISE,MI043 - USA MI - Ann Arbor (Accuri),"Ann Arbor, Michigan",false,true
+ISE,MO019 - USA MO St.Louis,"St. Louis, Missouri",false,true
+ISE,MYS02 - MYS Kuala Lumpur - Jalan Kerinchi,"Kuala Lumpur, Malaysia",false,true
+ISE,MYS31 - MYS Kuala Lumpur - Damansara Heights,"Damansara, Malaysia",false,true
+ISE,MYS32 - MYS Bayan Lepas - Penang,"Bayan Lepas, Malaysia",false,true
+ISE,NC041 - USA NC - Four Oaks,"Four Oaks, North Carolina",false,true
+ISE,NC042 - USA NC - Research Triangle Park,Research Triangle Park,false,true
+ISE,NC043 - USA NC - Durham (Treyburn),"Durham (Treyburn), North Carolina",false,true
+ISE,NC044 - USA NC - Burlington (Tripath Imaging),"Burlington, North Carolina",false,true
+ISE,NC045 - USA NC - Durham (Tripath Oncology),"Durham (Tripath Oncology), North Carolina",false,true
+ISE,NC046 - USA NC - Mebane,"Mebane, North Carolina",false,true
+ISE,NE031 - USA NE - Holdrege,"Holdrege, Nebraska",false,true
+ISE,NE032 - USA NE - Columbus (West),"Columbus (West), Nebraska",false,true
+ISE,NE033 - USA NE - Broken Bow,"Broken Bow, Nebraska",false,true
+ISE,NE034 - USA NE - Columbus (East),"Columbus (East), Nebraska",false,true
+ISE,NJ032 - USA NJ - Morristown Flight Operations,"Morristown, New Jersey",false,true
+ISE,NJ033 - USA NJ - Franklin Lakes,"Franklin Lakes, New Jersey",false,true
+ISE,NJDEFAULT - Corporate HQ Franklin Lakes,"Franklin Lakes, New Jersey (Default)",false,true
+ISE,NLD31 - NLD Drachten - Marconilaan,"Drachten, Netherlands",false,true
+ISE,NOR01 - Norway Asker,"Asker, Norway",false,true
+ISE,NZL02 - NZL Auckland,"Auckland, New Zealand",false,true
+ISE,OK003 - USA OK - Mannford,"Mannford, Oklahoma (Legacy Carefusion)",true,true
+ISE,PER31 - PER Ate - Lima,"Lima, Peru",false,false
+ISE,PHL31 - PHL Taguig City - Manila,"Manila, Philippines",false,true
+ISE,POL31 - POL Warsaw - ul. Osmanska,"Warsaw, Poland",false,true
+ISE,POL32 - POL Wroclaw - Legnicka,"Wroclaw, Poland - Legnicka",false,true
+ISE,POL32 - POL Wroclaw - Srubowa,"Wroclaw, Poland - Srubowa",false,true
+ISE,PRI31 - PRI Cayey - Vicks Drive,"Cayey, Puerto Rico",false,true
+ISE,PRI33 - PRI Cayey - Vicks Drive (BDB),"Cayey, Puerto Rico - Vicks Drive",false,true
+ISE,PRI34 - PRI Juncos - Road 31,"Juncos, Puerto Rico",false,true
+ISE,RTP,,false,false
+ISE,RUS31 - RUS Moscow - Dvintsev Str,"Moscow, Russia",false,true
+ISE,SAU31 - SAU Riyadh - New Aqaria Center,"Riyadh, Saudi Arabia",false,true
+ISE,SC031 - USA SC - Sumter,"Sumter, South Carolina",false,true
+ISE,SGP31 - SGP Tuas - Tuas Plant,"Tuas, Singapore - Plant",false,true
+ISE,SGP32 - SGP Tuas - Tuas Avenue SEA,"Tuas, Singapore (SEA)",false,true
+ISE,SGP33 - SGP Tuas - Tuas Avenue,"Tuas, Singapore - Tuas Avenue",false,true
+ISE,SGP34 - SGP Tuas - Tuas Avenue RD,"Tuas, Singapore (RD)",false,false
+ISE,SGP35 - SGP Biopolis District - Bioventure Centre,"Biopolis District, Singapore",false,true
+ISE,SGP36 - SGP Asia Pacific Shared Service Center,"Asia Pacific Shared Service Center, Singapore",false,true
+ISE,SGP37 - SGP Tuas - Tuas Avenue PDC,"Tuas, Singapore (PDC)",false,false
+ISE,SGP38 - SGP Tuas - Tuas Plant BDB,"Tuas, Singapore (BDB)",false,true
+ISE,SWE31 - SWE Helsingborg - Gasebacksvagen,"Helsingborg, Sweden",false,true
+ISE,San Diego,,false,false
+ISE,San Jose,,false,false
+ISE,TUR31 - TUR Istanbul - Büyükdere Cad,"Istanbul, Turkey",false,true
+ISE,TWN31 - TWN Taipei - Zhong Xiao E Rd,"Taipei, Taiwan",false,true
+ISE,TX031 - USA TX - San Antonio,"San Antonio, Texas",false,true
+ISE,TX033 - USA TX – Austin,"Austin, Texas",false,true
+ISE,TX138 - USA TX El Paso,"El Paso, Texas (Legacy Carefusion)",true,true
+ISE,US - San Diego,,false,false
+ISE,US - San Diego PMG,,false,false
+ISE,UT031 - USA UT - Sandy,"Sandy, Utah",false,true
+ISE,VA030 - USA VA - Reston,"Reston, Virginia (Legacy Carefusion)",true,true
+ISE,WI032 - USA WI - Franklin,"Franklin, Wisconsin",false,true
+ISE,ZAF31 - ZAF Johannesburg - Woodlands Dr,"Johannesburg, South Africa (Legacy Carefusion)",true,true
+Script,AL021 - USA AL - Birmingham - Vestavia,"Birmingham, Alabama",false,false
+Script,ARE01 - ARE Dubai - Middle East,"Dubai, United Arab Emirates",false,true
+Script,AUS01 - Seven Hills,"Seven Hills, Australia",false,false
+Script,AUS32 - AUS Melbourne,"Melbourne, Australia",false,false
+Script,AUS33 - AUS Adelaide,"Adelaide, Australia, Wayville",false,false
+Script,AUS34 - AUS Perth,"Perth, Australia",false,false
+Script,BEL01 - BEL Vilvoorde - Leuvensesteenweg,"Vilvoorde, Belgium, Leuvensesteenweg",false,false
+Script,BEL02 - BEL Drogenbos - Humaniteislaan,"Drogenbos, Humaniteislaan, Belgium",false,false
+Script,BGD31 - BGD Dhaka - Rupayan Karim Tower,"Rupayan Karim Tower, Dhaka, Bangladesh",false,false
+Script,BRA10 - BRA Cotia - Parque Industrial San Jose,"Parque Industrial, San Jose",false,false
+Script,BRA34 - BRA Curitiba - Rua Ciro Correia Pereira,,false,false
+Script,CA150 - USA CA - Yorba Linda,,false,false
+Script,CA151 - USA CA - Palm Springs,,false,false
+Script,CA170 - USA CA - Carlsbad CF Aviation,,false,false
+Script,"CA175 - USA CA - Ontario, Wall Street",,false,false
+Script,CAN33 - CAN Mississauga - Tech Avenue,"Mississauga, Ontario (Legacy Carefusion)",true,true
+Script,CHN03 - CHN Shanghai Times Square,"Shanghai, China",false,false
+Script,CHN11 - CHN Shenzhen - KTL,,false,false
+Script,CHN13 - CHN Beijing - Fengtai District,,false,false
+Script,CHN31 - CHN Guangzhou - Jie Tai Plaza,"Guangzhou, China",false,true
+Script,CHN38 - CHN Nanjing - Int'l Finance Centre,,false,false
+Script,CHN39 - CHN Shenyang - China Res Bldg,,false,false
+Script,CHN40 - CHN Tianjin - The Exchange 1,,false,false
+Script,CHN41 - CHN Xian - Kaiai Mansion,,false,false
+Script,CHN42 - CHN Wuhan - New World Int'l Trade Centre,,false,false
+Script,CHN43 - CHN Chongqing - Metropolitan Tower,,false,false
+Script,CHN44 - CHN Changsha - Hunan Province,,false,false
+Script,CHN45 - CHN Zhengzhou - Yuda China World Trade Center,,false,false
+Script,CHN46 - CHN Kunming - Brilliant Plaza,,false,false
+Script,CO101 - USA CO - Golden,,false,false
+Script,DEU05 - DEU Baesweiler - Pascalstrasse,,false,false
+Script,DEU07 - DEU Hoechberg - Leibnizstrasse,,false,false
+Script,DEU31 - DEU Plattling - Dr. Wandinger-Strasse,,false,false
+Script,EDC01 - production eDC (Konterra),,false,false
+Script,EDC02 - non-production eDC (Zanker),,false,false
+Script,ESP02 - ESP Madrid - Edificio Veganova,,false,false
+Script,ESP08 - ESP Algete - Rio Manzanares,,false,false
+Script,ESP12 - ESP Malaga - Camino de Casabermeja,,false,false
+Script,FIN01 - FIN Vantaa - Ayritie,,false,false
+Script,FIN02 - FIN Helsinki - Kuortaneenkatu,,false,false
+Script,FL115 - USA FL - Maitland,,false,false
+Script,FRA01 - FRA Chateaubriant - bis rue de la Renaissance,,false,false
+Script,FRA08 - FRA Voisins le Bretonneux,,false,false
+Script,FRA32 - Rungis Cedex - Bâtiment Londres,"Rungis Cedex, France",false,true
+Script,GA066 - USA GA - Tucker,,false,false
+Script,GBR10 - GBR Basingstoke - The Crescent,,false,false
+Script,GBR18 - GBR Sheffield - Albreda House,,false,false
+Script,GBR19 - GBR St. Albans - North Orbital Commercial Park,,false,false
+Script,HKG01 - Hong Kong,,false,false
+Script,HUN01 - HUN Budapest - Dobrentei,,false,false
+Script,IDN31 - IDN Jakarta - Sudirman Square Office Towers,"Jakarta, Indonesia",false,true
+Script,IL060 - USA IL - Oak Forest,,false,false
+Script,IL062 - USA IL - Waukegan McGaw Pk KB,,false,false
+Script,IL064 - USA IL - Waukegan McGaw Pk MB,,false,false
+Script,IL065 - USA IL - Waukegan McGaw Pk WM,,false,false
+Script,IL066 - USA IL - Waukegan MWDC,,false,false
+Script,IL067 - USA IL - Waukegan McGaw Pk KBD,,false,false
+Script,IND01 - IND Hyderabad - APHB (IT),,false,false
+Script,IND20 - Gurgaon,,false,false
+Script,IND21 - IND New Delhi - Saket District Ctr,,false,false
+Script,IND32 - IND Rewari - Bawal,,false,false
+Script,IND33 - IND Mumbai - Chandivali Farm Road,,false,false
+Script,IND34 - IND Bangalore - Cornich Al-Latheef,,false,false
+Script,IND35 - IND Kolkata - Naya Patty Pachimpara,,false,false
+Script,ITA01 - ITA Cornaredo - Via Brera,,false,false
+Script,JPN03 - JPN Bunkyo-ku - Koishikawa,,false,false
+Script,JPN31 - JPN Fukuoka-shi - Hakata-ku,,false,false
+Script,JPN32 - JPN Hiroshima-shi - Naka-ku,,false,false
+Script,JPN34 - JPN Kobe-shi - Distribution Center,,false,false
+Script,JPN35 - JPN Nagoya-shi - Naka-ku,,false,false
+Script,JPN37 - JPN Sapporo - Chuo-ku,,false,false
+Script,JPN40 - JPN Tokyo Shinagawa-ku - Osaki CSC,,false,false
+Script,KOR31 - KOR South Korea - Daegu,,false,false
+Script,KOR33 - KOR South Korea - Gwangiu,,false,false
+Script,KOR35 - KOR South Korea - Gyeongsangbukdo - Dabu,,false,false
+Script,KS015 - USA KS - Leawood Tomahawk Crk,,false,false
+Script,LUX31 - LUX Luxembourg - rue d'Esch,,false,false
+Script,MA002 - USA MA - Marlborough,,false,false
+Script,MEX01 - MEX Mexicali - Cerrada De La Produccion,,false,false
+Script,MI012 - USA MI - Highland,,false,false
+Script,MI032 - USA MI - Sterling Heights Phoenix,,false,false
+Script,MI041 - USA MI - Detroit (Union),,false,false
+Script,MI042 - USA MI - Detroit (Non union),,false,false
+Script,MN013 - USA MN - Minneapolis Medina Rd,,false,false
+Script,C034 - USA NC - Creedmoor Alaris,,false,false
+Script,NJ010 - USA NJ - Totowa 20 Campus Road,,false,false
+Script,NJ031 - USA NJ - Wilson ? BDRx,"Wilson, North Carolina",false,false
+Script,NJ034 - USA NJ - Franklin Lakes(BD Overseas),"Franklin Lakes, Overseas",false,false
+Script,NLD05 - NLD Houten - De Molen,,false,false
+Script,NLD32 - NLD Etten Leur - Bredaseweg,,false,false
+Script,NM008 - USA NM - Albuquerque - Osuna,,false,false
+Script,NZL31 - NZL Auckland - Mt Wellington,,false,false
+Script,OH014 - USA OH - Cleveland,,false,false
+Script,OH057 - USA OH - Lakewood Detroit Ave,,false,false
+Script,OH064 - USA OH - Dublin FSS E Svc Ctr,,false,false
+Script,OH070 - USA OH - Dublin - Metro Plc S,,false,false
+Script,PAK31 - PAK Gulberg - Lahore,,false,false
+Script,PRI32 - PRI San Lorenzo - Cerro Gordo Inst Park,"San Lorenzo, Puerto Rico",false,false
+Script,PRT10 - PRT Lisbon - Carcavelos,,false,false
+Script,PRT31 - PRT Porto - Rua Eng Ferreira Dias,,false,false
+Script,ROU10 - ROU Bucharest - Iride Bus Pk (Genpact),,false,false
+Script,SAU01 - SAU Riyadh - Al-Jeel Mdcl & Trading Co,"Riyadh, Saudi Arabia",false,true
+Script,SGP01 - SGP Marina Bay Financial Ctr - Keppel Towers,,false,false
+Script,SVK31 - SVK Slovakia Field,,false,false
+Script,SWE01 - SWE Sollentuna - Hammarbacken,,false,false
+Script,SWE32 - SWE Stockholm - Arstaangsvagen,,false,false
+Script,SWE33 - SWE G?teborg - Carmel Pharma,,false,false
+Script,THA31 - THA Bangkok - The Offices at Central World,,false,false
+Script,TX050 - USA TX - San Antonio-Magic Dr,"San Antonio, Texas",false,true
+Script,VNM31 - VNM Ho Chi Minh City - Osic Building,,false,false
+Script,VNM32 - VNM Hanoi City - Cau Giay,,false,false
+Script,WA001 - USA WA - Seattle -NE 43rd St,,false,false
+Script,WA031 - USA WA - Seattle,,false,false
+Script,WI031 - USA WI - Madison,,false,false
+Script,ZAF01 - ZAF Cape Town - Oude Molen Bus Pk,,false,false
+Script,ZAF02 - ZAF Durban - Pinetown,,false,false
+Script,ZAF03 - ZAF Midrand - Allandale Bus Park,,false,false
+Script,ZMB31 - ZMB Woodlands - Independence Ave,,false,false
+dropDownList,,"Austin, New Zealand",false,false
+dropDownList,,"Cockeysville, Maryland",false,false
+dropDownList,,"Columbus, Nebraska",false,false
+dropDownList,,"Durham, North Carolina",false,false
+dropDownList,,"Madrid, Spain (Legacy Carefusion)",false,false
+dropDownList,,"Mexico City, Mexico",false,false
+dropDownList,,"Piscataway, New Jersey",false,false
+dropDownList,,"Reading, England (Legacy Carefusion)",false,false
+dropDownList,,"Rovigo, Italy (Legacy Carefusion)",false,false
+dropDownList,,Safety Syringes,false,false
+dropDownList,,"Sparks, Maryland",false,false

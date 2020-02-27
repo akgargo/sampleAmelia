@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:prop="http://www.ipsoft.com/schema/bpmn/prop" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn2:process id="Process_1" name="myTest" isExecutable="false">
+    <bpmn2:startEvent id="StartEvent_1">
+      <bpmn2:outgoing>SequenceFlow_06dtkxj</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_06dtkxj" sourceRef="StartEvent_1" targetRef="Task_04y64na"/>
+    <bpmn2:endEvent id="EndEvent_04rljiv">
+      <bpmn2:incoming>SequenceFlow_1ip6acg</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1ip6acg" sourceRef="Task_04y64na" targetRef="EndEvent_04rljiv"/>
+    <bpmn2:scriptTask id="Task_04y64na" name="Hello" scriptFormat="groovy">
+      <bpmn2:extensionElements>
+        <prop:property name="included_scripts" value="hello"/>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_06dtkxj</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1ip6acg</bpmn2:outgoing>
+      <bpmn2:script>// import groovy.json.JsonOutput
+
+// // ExpandoMetaClass.enableGlobally()
+// def xx
+// def yy
+// try {
+//     self = execution
+     
+// method = null
+// currentService = [name: "contextService", methods: []]
+// for (method in self.getClass().declaredMethods) {
+//     _method = [
+//         name: method.name,
+//         synthetic: method.synthetic,
+//         parameterCount: method.parameterCount,
+//         // parameterTypes: method.parameterTypes,
+//     ]
+//     // log.info(new Date().getTime() + "\tLOOP method: $method.name\tsynthetic: $method.synthetic\tparametersLenght: $method.parameterCount\t$method.parameterTypes")
+//     if (!method.synthetic &amp;&amp; !method.parameterCount) {
+//         try { _method.value = self.invokeMethod(method.name, null) } catch (e) { log.error(new Date().getTime() + "\tcould not invoke method: $method.name");continue }
+//     }
+//     // log.info(new Date().getTime() + "\t$_method")
+//     sleep(50)
+//     currentService.methods &lt;&lt; _method
+// }
+
+// log.info(JsonOutput.toJson(currentService))
+// } catch (e) {
+//     xx = e.message    
+//     log.error(e)
+// }
+
+def jsonString = '''
+    {
+        "action": "addChatNotesIntegration",
+        "componentType": "ChatNote",
+        "payload": [{
+            "component": "Banner",
+            "title": "My Banner",
+            "styles": {
+                "height": "100%",
+                "color": "#fff",
+                "backgroundColor": "#4d5aff"
+            },
+            "subcomponents": [{
+                    "subcomponent": "Markup",
+                    "markupType": "Text",
+                    "value": "Welcome to SSMC Chat Support",
+                    "fontSize": "headline",
+                    "fontWeight": "bold"
+                },
+                {
+                    "subcomponent": "Markup",
+                    "markupType": "Text",
+                    "value": "Chat with Amelia, our Virtual SSMC Desk Representative, to help you:",
+                    "fontSize": "title",
+                    "fontWeight": "regular"
+                },
+                {
+                    "subcomponent": "Markup",
+                    "markupType": "Text",
+                    "value": "&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Create a ticket&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Update a ticket&lt;br/&gt;Check ticket status&lt;br/&gt;&lt;br/&gt;",
+                    "fontSize": "subhead",
+                    "fontWeight": "normal"
+                }
+            ]
+        }]
+    }
+    '''
+
+messageService.sendIntegrationMessage(jsonString)
+
+// def buildIntegrationMessage() {
+//     return sectionBuilder.create()
+//       .title("Address #1")
+//       .name("address_1")
+//       .addSubSection()
+//         .title("Mailing Address")
+//         .name("mailingAddress")
+//         .newSectionField()
+//           .name("line1")
+//           .value("40 Wall Street")
+//           .label("Street")
+//           .backToSection()
+//       .backToParentSection()
+//       .build() 
+// }
+ 
+// def payload = buildIntegrationMessage()
+// messageService.sendIntegrationMessage(payload.toJsonString())</bpmn2:script>
+    </bpmn2:scriptTask>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="180" y="170" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_06dtkxj_di" bpmnElement="SequenceFlow_06dtkxj">
+        <di:waypoint x="216" y="188"/>
+        <di:waypoint x="274" y="188"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_04rljiv_di" bpmnElement="EndEvent_04rljiv">
+        <dc:Bounds x="484" y="160" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1ip6acg_di" bpmnElement="SequenceFlow_1ip6acg">
+        <di:waypoint x="394" y="188"/>
+        <di:waypoint x="439" y="188"/>
+        <di:waypoint x="439" y="178"/>
+        <di:waypoint x="484" y="178"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ScriptTask_0hwj2jm_di" bpmnElement="Task_04y64na">
+        <dc:Bounds x="274" y="148" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

@@ -1,0 +1,44 @@
+{
+  "id": "5715371d-a4fb-4c08-b7c1-f00fe8fe8e33",
+  "document": {
+    "id": "e0602c9a-282a-453b-9fc8-0676dfad905a",
+    "name": "cwlDemo",
+    "domain": "65e03585-771b-4db9-8a7d-8f81b866c237"
+  },
+  "name": "cwlDemo",
+  "annotations": [
+    {
+      "text": "cwlDemo I need to access BDDemo",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlDemo I want to start demo",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlDemo I need a ui demo",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    },
+    {
+      "text": "cwlDemo I want to demo today",
+      "intents": [],
+      "spanlessEntities": [],
+      "speaker": "",
+      "slots": []
+    }
+  ],
+  "revisionStatus": "NEW",
+  "documentRevisionNumber": {
+    "major": 1,
+    "minor": 0
+  }
+}
